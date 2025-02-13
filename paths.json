@@ -5,7 +5,6 @@
      "/content/eds-xwalk-project-demo-nitesh/us/en/metadata/:/metadata.json"
   ],
   "includes:" [
-    "/content/eds-xwalk-project-demo-nitesh/us/",
     "/content/eds-xwalk-project-demo-nitesh/us/en/"
   ]
 }
