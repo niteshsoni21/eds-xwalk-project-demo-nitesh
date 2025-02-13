@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/aem-boilerplate/:/",
-    "/content/aem-boilerplate/configuration:/.helix/config.json",
-    "/content/aem-boilerplate/metadata:/metadata.json"
+    "/content/eds-xwalk-project-demo-nitesh/us/en/:/",
+    "/content/eds-xwalk-project-demo-nitesh/us/en/configuration:/.helix/config.json"
   ],
-  "includes": [
-    "/content/aem-boilerplate/"
+  "includes:" [
+    "/content/eds-xwalk-project-demo-nitesh/us/",
+    "/content/eds-xwalk-project-demo-nitesh/us/en/"
   ]
 }
