@@ -2,8 +2,8 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--eds-xwalk-project-demo-nitesh--niteshsoni21.aem.page/
-- Live: https://main--eds-xwalk-project-demo-nitesh--niteshsoni21.aem.live/
+- Preview: https://dev--eds-xwalk-project-demo-nitesh--niteshsoni21.aem.page/
+- Live: https://dev--eds-xwalk-project-demo-nitesh--niteshsoni21.aem.live/
 
 ## Documentation
 
