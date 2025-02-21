@@ -1,5 +1,0 @@
-mountpoints:
-  /:
-    url: "https://author-p71852-e1137339.adobeaemcloud.com/bin/franklin.delivery/niteshsoni21/eds-xwalk-project-demo-nitesh/main"
-    type: "markup"
-    suffix: ".html"
