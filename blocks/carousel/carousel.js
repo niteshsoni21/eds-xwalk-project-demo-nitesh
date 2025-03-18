@@ -1,0 +1,1 @@
+import { getMetadata } from '../../scripts/aem.js';
