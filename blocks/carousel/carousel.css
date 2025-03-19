@@ -41,7 +41,6 @@
   top: 0;
   left: 0;
   bottom: 0;
-  right: 0;
   text-shadow: 0 3px 6px #0000002c;
   padding-top: 36px;
   padding-left: 41px;
@@ -65,7 +64,7 @@
   padding-bottom: 15px;
 }
 
-.stories .carousel-text p::first-child {
+.stories .carousel-text p:first-child {
   background: no-repeat padding-box #fff;
   display: inline-block;
   color: #000;
@@ -99,7 +98,7 @@
   margin-top: 0;
 }
 
-@media (max-width: 1023px) {
+@media (width <= 1023px) {
   .feature.carousel-container {
     padding: 31px 17px;
     margin: 0 -17px;
