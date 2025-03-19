@@ -88,36 +88,13 @@
 }
 
 .carousel-wrapper {
-padding: 0;
+    padding: 0;
 }
 
-.carousel-wrapper p {
-font-size: 20px;
-max-width: 75%;
-}
-
-.swiper-slide .carousel-text {
-margin-top: 0;
-padding-top: 24px;
-padding-left: 25px;
-}
-
-.carousel-wrapper .carousel-text p {
-line-height: 24px;
-font-size: 16px;
-letter-spacing: 0.32px;
-}
-
-.swiper-slide .carousel-text p:first-child {
-padding: 5px 16px 6px;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.24px;
-}
-
-.swiper-slide .carousel-text .button-container a {
-font-size: 12px;
-line-height: 16px;
+.carousel-wrapper .swiper-slide .carousel-text {
+    margin-top: 0;
+    padding-top: 24px;
+    padding-left: 25px;
 }
 
 .carousel-wrapper .swiper-button-prev {
