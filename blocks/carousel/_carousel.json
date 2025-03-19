@@ -63,7 +63,8 @@
     {
       "id": "carousel",
       "components": [
-          "carouselSlide"
+        "carouselSlide",
+        "text"
       ]
     }
   ]
