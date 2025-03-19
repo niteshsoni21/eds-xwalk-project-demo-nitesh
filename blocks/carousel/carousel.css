@@ -63,10 +63,6 @@
   width: 20px;
 }
 
-.carousel-wrapper {
-    padding: 0;
-}
-
 .carousel-wrapper .swiper-slide .carousel-text {
     position: relative;
     top: -270px;
@@ -102,27 +98,22 @@
     width: 99.9%;
 }
 
-.swiper-wrapper {
-    padding-top: 50px;
-}
-
-.swiper-slide {
-    display: inline-block;
-    height: 260px;
-}
-
 .carousel-wrapper {
+  padding: 0;
   overflow: hidden;
   position: relative;
   width: 100%;
 }
 
 .swiper-wrapper {
+  padding-top: 50px;
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
 
 .swiper-slide {
+  display: inline-block;
+  height: 260px;
   flex: 0 0 calc(100% / 3);
   transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
 }
