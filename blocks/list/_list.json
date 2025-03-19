@@ -49,8 +49,8 @@
           "valueType": "string",
           "options": [
             {
-              "name": "ascending",
-              "value": "Ascending"
+              "name": "Ascending",
+              "value": "ascending"
             },
             {
               "name": "Descending",
