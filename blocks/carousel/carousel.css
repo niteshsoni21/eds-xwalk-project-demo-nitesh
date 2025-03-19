@@ -20,13 +20,12 @@
 
 .carousel-container .default-content-wrapper p {
   padding-bottom: 30px;
-  font-family: "Roboto Medium";
   font-size: 26px;
 }
 
 .carousel-container .carousel-text {
   text-align: left;
-  font: 18px/32px "Roboto Regular";
+  font: 18px/32px;
   letter-spacing: 0;
   color: #201d1d;
   margin-top: 18px;
@@ -43,7 +42,6 @@
   left: 0;
   bottom: 0;
   right: 0;
-
   text-shadow: 0 3px 6px #0000002c;
   padding-top: 36px;
   padding-left: 41px;
@@ -55,11 +53,10 @@
   line-height: 36px;
   letter-spacing: 0.52px;
   color: #fff;
-  font-family: 'Roboto Medium';
   max-width: 80%;
 }
 
-.stories .carousel-text:after {
+.stories .carousel-text::after {
   content: "";
   display: block;
   width: 87px;
@@ -68,21 +65,21 @@
   padding-bottom: 15px;
 }
 
-.stories .carousel-text p:first-child {
+.stories .carousel-text p::first-child {
   background: no-repeat padding-box #fff;
   display: inline-block;
   color: #000;
   letter-spacing: 0.32px;
   padding: 6px 20px 6px 17px;
   margin-bottom: 17px;
-  font: 16px/21px 'Roboto Medium';
+  font: 16px/21px;
 }
 
 .stories .carousel-text .button-container a {
   position: absolute;
   bottom: 25px;
   right: 18px;
-  font: bold 14px/19px "Roboto Bold";
+  font: bold 14px/19px;
   letter-spacing: 0.56px;
   color: #fff;
   text-transform: uppercase;
@@ -90,7 +87,7 @@
 
 .stories .carousel-text .button-container a::after {
   content: "";
-  background: url(/styles/icons/right-icon.svg) no-repeat;
+  background: url('/icons/right-icon.svg') no-repeat;
   height: 20px;
   margin-left: 15px;
   display: inline-block;
@@ -102,7 +99,7 @@
   margin-top: 0;
 }
 
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .feature.carousel-container {
     padding: 31px 17px;
     margin: 0 -17px;
@@ -143,7 +140,7 @@
 
   .carousel-container .swiper-button-prev,
   .recommendedvariants-container .swiper-button-prev {
-    background: url(../../styles/icons/arrow-left-mobile.svg) no-repeat 0 0;
+    background: url('../../icons/arrow-left-mobile.svg') no-repeat 0 0;
     left: auto;
     right: 20px;
     padding-right: 15px;
@@ -153,7 +150,7 @@
   .carousel-container .swiper-button-next,
   .recommendedvariants-container .swiper-button-next {
     transform: rotate(180deg);
-    background: url(../../styles/icons/arrow-left-mobile.svg) no-repeat 0 0;
+    background: url('../../icons/arrow-left-mobile.svg') no-repeat 0 0;
     width: 20px;
   }
 
