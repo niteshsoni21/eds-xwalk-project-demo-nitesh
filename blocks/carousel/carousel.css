@@ -83,10 +83,6 @@
   width: 20px;
 }
 
-.carousel-wrapper .swiper-slide .carousel-text {
-  margin-top: 0;
-}
-
 .carousel-wrapper {
     padding: 0;
 }
@@ -122,5 +118,5 @@
 }
 
 .swiper-wrapper {
-    padding: 25px 0px;
+    padding-top: 25px;
 }
