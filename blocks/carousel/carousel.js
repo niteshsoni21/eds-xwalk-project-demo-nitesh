@@ -41,19 +41,25 @@ export default function decorate(block) {
 
   // For Carousel -
   const slides = document.querySelectorAll('.swiper-slide');
-  const wrapper = document.querySelector('.swiper-wrapper');
   const nextSlide = document.querySelector('.swiper-button-next.carousel-next');
   const prevSlide = document.querySelector('.swiper-button-prev.carousel-prev');
   const slidesPerScroll = 3;
   const totalSlides = slides.length;
   let curSlide = 0;
-  // Ensure wrapper width accommodates all slides
-  wrapper.style.display = 'flex';
-  wrapper.style.transition = 'transform 0.5s ease-in-out';
-  // Set slide widths dynamically to fit exactly 3 slides per view
-  slides.forEach((slide) => {
-    slide.style.flex = `0 0 calc(100% / ${slidesPerScroll})`;
-  });
+  // Function to update slide positions and visibility
+  function updateSlides() {
+    slides.forEach((slide, indx) => {
+      const position = indx - curSlide;
+      // Show only slides within the range
+      if (position >= 0 && position < slidesPerScroll) {
+        slide.classList.remove('hidden-slide');
+      } else {
+        slide.classList.add('hidden-slide');
+      }
+    });
+  }
+  // Set initial positions
+  updateSlides();
   // Next slide event listener
   nextSlide.addEventListener('click', () => {
     if (curSlide + slidesPerScroll >= totalSlides) {
@@ -61,7 +67,7 @@ export default function decorate(block) {
     } else {
       curSlide += slidesPerScroll;
     }
-    wrapper.style.transform = `translateX(-${(curSlide * 100) / slidesPerScroll}%)`;
+    updateSlides();
   });
   // Previous slide event listener
   prevSlide.addEventListener('click', () => {
@@ -71,6 +77,6 @@ export default function decorate(block) {
       curSlide -= slidesPerScroll;
       if (curSlide < 0) curSlide = 0;
     }
-    wrapper.style.transform = `translateX(-${(curSlide * 100) / slidesPerScroll}%)`;
+    updateSlides();
   });
 }
