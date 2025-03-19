@@ -40,22 +40,22 @@ export default function decorate(block) {
   block.parentElement.appendChild(nextButton);
 
   // For Carousel -
-  const slides = document.querySelectorAll(".swiper-slide");
-  const wrapper = document.querySelector(".swiper-wrapper");
-  const nextSlide = document.querySelector(".swiper-button-next.carousel-next");
-  const prevSlide = document.querySelector(".swiper-button-prev.carousel-prev");
+  const slides = document.querySelectorAll('.swiper-slide');
+  const wrapper = document.querySelector('.swiper-wrapper');
+  const nextSlide = document.querySelector('.swiper-button-next.carousel-next');
+  const prevSlide = document.querySelector('.swiper-button-prev.carousel-prev');
   const slidesPerScroll = 3;
   const totalSlides = slides.length;
   let curSlide = 0;
   // Ensure wrapper width accommodates all slides
-  wrapper.style.display = "flex";
-  wrapper.style.transition = "transform 0.5s ease-in-out";
+  wrapper.style.display = 'flex';
+  wrapper.style.transition = 'transform 0.5s ease-in-out';
   // Set slide widths dynamically to fit exactly 3 slides per view
   slides.forEach((slide) => {
     slide.style.flex = `0 0 calc(100% / ${slidesPerScroll})`;
   });
   // Next slide event listener
-  nextSlide.addEventListener("click", function () {
+  nextSlide.addEventListener('click', () => {
     if (curSlide + slidesPerScroll >= totalSlides) {
       curSlide = 0;
     } else {
@@ -64,7 +64,7 @@ export default function decorate(block) {
     wrapper.style.transform = `translateX(-${(curSlide * 100) / slidesPerScroll}%)`;
   });
   // Previous slide event listener
-  prevSlide.addEventListener("click", function () {
+  prevSlide.addEventListener('click', () => {
     if (curSlide === 0) {
       curSlide = totalSlides - slidesPerScroll;
     } else {
