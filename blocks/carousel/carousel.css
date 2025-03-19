@@ -99,13 +99,14 @@
 
 .swiper-slide .carousel-image {
     height: 260px;
-    width: 364px;
+    width: 99.9%;
 }
 
 .swiper-wrapper {
-    padding-top: 25px;
+    padding-top: 50px;
 }
 
 .swiper-slide {
     display: inline-block;
+    height: 260px;
 }
