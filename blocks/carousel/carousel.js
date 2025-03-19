@@ -27,9 +27,6 @@ export default function decorate(block) {
       const carouselImageDiv = slide.querySelector('.carousel-image');
       const carouselTextDiv = slide.querySelector('.carousel-text');
 
-      const anchorlinkDiv = carouselTextDiv.querySelector('a');
-      anchorElement.href = anchorlinkDiv.getAttribute('href');
-
       anchorElement.appendChild(carouselImageDiv);
       anchorElement.appendChild(carouselTextDiv);
       slide.appendChild(anchorElement);
