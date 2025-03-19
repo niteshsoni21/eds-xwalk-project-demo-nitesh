@@ -1,5 +1,170 @@
-.btn {
-    position: absolute;
-    width: 40px;
-    height: 40px;
+.carousel-wrapper,
+.swiper-wrapper {
+  width: 100%;
+}
+
+.carousel-wrapper,
+.stories .carousel-image {
+  position: relative;
+}
+
+.carousel-container {
+  overflow: hidden;
+}
+
+.feature.carousel-container {
+  margin: 30px 30px 72px 45px;
+  clear: both;
+  background: #F9F9F9 0% 0% no-repeat padding-box;
+}
+
+.carousel-container .default-content-wrapper p {
+  padding-bottom: 30px;
+  font-family: "Roboto Medium";
+  font-size: 26px;
+}
+
+.carousel-container .carousel-text {
+  text-align: left;
+  font: 18px/32px "Roboto Regular";
+  letter-spacing: 0;
+  color: #201d1d;
+  margin-top: 18px;
+}
+
+
+.swiper-slide-visible {
+  opacity: 1;
+}
+
+.stories .carousel-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  text-shadow: 0 3px 6px #0000002c;
+  padding-top: 36px;
+  padding-left: 41px;
+  padding-right: 60px;
+}
+
+.stories .carousel-text p {
+  font-size: 26px;
+  line-height: 36px;
+  letter-spacing: 0.52px;
+  color: #fff;
+  font-family: 'Roboto Medium';
+  max-width: 80%;
+}
+
+.stories .carousel-text:after {
+  content: "";
+  display: block;
+  width: 87px;
+  max-width: 70%;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 15px;
+}
+
+.stories .carousel-text p:first-child {
+  background: no-repeat padding-box #fff;
+  display: inline-block;
+  color: #000;
+  letter-spacing: 0.32px;
+  padding: 6px 20px 6px 17px;
+  margin-bottom: 17px;
+  font: 16px/21px 'Roboto Medium';
+}
+
+.stories .carousel-text .button-container a {
+  position: absolute;
+  bottom: 25px;
+  right: 18px;
+  font: bold 14px/19px "Roboto Bold";
+  letter-spacing: 0.56px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.stories .carousel-text .button-container a::after {
+  content: "";
+  background: url(/styles/icons/right-icon.svg) no-repeat;
+  height: 20px;
+  margin-left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+}
+
+.carousel-container .stories .carousel-text {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .feature.carousel-container {
+    padding: 31px 17px;
+    margin: 0 -17px;
+  }
+
+  .carousel-wrapper {
+    padding: 0;
+  }
+
+  .carousel-container .default-content-wrapper p {
+    font-size: 20px;
+    max-width: 75%;
+  }
+
+  .stories .carousel-text {
+    margin-top: 0;
+    padding-top: 24px;
+    padding-left: 25px;
+  }
+
+  .carousel-container .carousel-text p {
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.32px;
+  }
+
+  .stories .carousel-text p:first-child {
+    padding: 5px 16px 6px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.24px;
+  }
+
+  .stories .carousel-text .button-container a {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .carousel-container .swiper-button-prev,
+  .recommendedvariants-container .swiper-button-prev {
+    background: url(../../styles/icons/arrow-left-mobile.svg) no-repeat 0 0;
+    left: auto;
+    right: 20px;
+    padding-right: 15px;
+    width: 20px;
+  }
+
+  .carousel-container .swiper-button-next,
+  .recommendedvariants-container .swiper-button-next {
+    transform: rotate(180deg);
+    background: url(../../styles/icons/arrow-left-mobile.svg) no-repeat 0 0;
+    width: 20px;
+  }
+
+  .carousel-container .swiper-button-next,
+  .carousel-container .swiper-button-prev {
+    top: -75px;
+  }
+
+  .stories.carousel-container .swiper-button-next,
+  .stories.carousel-container .swiper-button-prev {
+    top: -50px;
+  }
+
 }
