@@ -149,7 +149,7 @@
       {
         "component": "text",
         "name": "text",
-        "value": "",
+        "value": "Testing text image",
         "label": "Text",
         "valueType": "string"
       }
@@ -209,5 +209,24 @@
         "valueType": "string"
       }
     ]
-  }
+  },
+  {
+    "id": "quote",
+    "fields": [
+       {
+         "component": "richtext",
+         "name": "quote",
+         "value": "",
+         "label": "Quote",
+         "valueType": "string"
+       },
+       {
+         "component": "text",
+         "valueType": "string",
+         "name": "author",
+         "label": "Author",
+         "value": ""
+       }
+     ]
+  }  
 ]
