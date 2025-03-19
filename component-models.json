@@ -136,26 +136,7 @@
       }
     ]
   },
-  {
-    "id": "textImage",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "name": "text",
-        "value": "Testing text image",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
+    {
     "id": "columns",
     "fields": [
       {
@@ -228,5 +209,17 @@
          "value": ""
        }
      ]
-  }  
+  } ,
+  {
+    "id": "textImage",
+    "fields": [
+     {
+        "component": "text",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  } 
 ]
