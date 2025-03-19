@@ -16,8 +16,7 @@
       }
     }
   ],
-  "models": [
-    {
+  "models": [{
       "id": "list",
       "fields": [
         {
