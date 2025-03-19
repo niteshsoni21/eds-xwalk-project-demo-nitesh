@@ -52,7 +52,8 @@
         "columns",
         "fragment",
         "carousel",
-        "list"
+        "list",
+        "author_block"
       ]
     }
   ]
