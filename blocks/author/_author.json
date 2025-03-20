@@ -28,7 +28,7 @@
         },
         {
           "component": "text",
-          "name": "authorContent_subTitle",
+          "name": "authorContent_subtitle",
           "label": "Sub Title",
           "valueType": "string"
         },
