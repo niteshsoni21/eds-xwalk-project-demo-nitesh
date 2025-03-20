@@ -21,11 +21,6 @@
       "id": "author_block",
       "fields": [
         {
-          "component": "tab",
-          "label": "Author Info",
-          "name": "author_details"
-        },
-        {
           "component": "text",
           "name": "title",
           "label": "Title",
@@ -57,35 +52,6 @@
           "component": "aem-tag",
           "label": "Tag",
           "name": "cq:tags",
-          "valueType": "string"
-        },
-        {
-          "component": "tab",
-          "label": "Social Info",
-          "name": "social_info"
-        },
-        {
-          "component": "text",
-          "name": "facebook",
-          "label": "Facebook",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "linkedIn",
-          "label": "LinkedIn",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "youtube",
-          "label": "youtube",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "instagram",
-          "label": "Instagram",
           "valueType": "string"
         }
       ]
