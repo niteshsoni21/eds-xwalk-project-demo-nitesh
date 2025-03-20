@@ -22,19 +22,19 @@
       "fields": [
         {
           "component": "richtext",
-          "name": "authorText_title",
+          "name": "authorContent_title",
           "label": "Title",
           "valueType": "string"
         },
         {
           "component": "text",
-          "name": "authorText_subTitle",
+          "name": "authorContent_subtitle",
           "label": "Sub Title",
           "valueType": "string"
         },
         {
           "component": "text",
-          "name": "authorName",
+          "name": "authorContent_authorName",
           "label": "Author Name",
           "valueType": "string",
           "required": true
@@ -42,7 +42,7 @@
         {
           "component": "date-time",
           "label": "Date",
-          "name": "date",
+          "name": "authorContent_date",
           "valueType": "date",
           "placeholder": "YYYY-MM-DD"
         },
