@@ -129,12 +129,6 @@
       },
       {
         "component": "text",
-        "name": "subtitle",
-        "label": "Sub Title",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
         "name": "authorname",
         "label": "Author Name",
         "valueType": "string",
