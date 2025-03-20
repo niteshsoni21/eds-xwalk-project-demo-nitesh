@@ -21,8 +21,20 @@
       "id": "author",
       "fields": [
         {
+          "component": "richtext",
+          "name": "authorText_title",
+          "label": "Title",
+          "valueType": "string"
+        },
+        {
           "component": "text",
-          "name": "authorname",
+          "name": "authorText_subTitle",
+          "label": "Sub Title",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "authorName",
           "label": "Author Name",
           "valueType": "string",
           "required": true
@@ -32,20 +44,41 @@
           "label": "Date",
           "name": "date",
           "valueType": "date",
-          "placeholder": "YYYY-MM-DD",
-          "displayFormat": "Month D, Yr"
+          "placeholder": "YYYY-MM-DD"
+        },
+        {
+          "component": "aem-tag",
+          "name": "cq:tags",
+          "value": "",
+          "label": "Tags",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "social_facebook",
+          "label": "Facebook Link",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "social_linkedIn",
+          "label": "LinkedIn Link",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "social_youtube",
+          "label": "Youtube Link",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "social_instagram",
+          "label": "Instagram Link",
+          "valueType": "string"
         }
       ]
     }
   ],
-  "filters": [
-    {
-      "id": "author",
-      "components": [
-        "title",
-        "tags",
-        "social_icons"
-      ]
-    }
-  ]
+  "filters": []
 }

@@ -18,16 +18,7 @@
       "fragment",
       "carousel",
       "author",
-      "tags",
-      "social_icons"
-    ]
-  },
-  {
-    "id": "author",
-    "components": [
-      "title",
-      "tags",
-      "social_icons"
+      "tags"
     ]
   },
   {
