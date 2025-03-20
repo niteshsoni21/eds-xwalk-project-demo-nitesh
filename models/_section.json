@@ -52,7 +52,9 @@
         "columns",
         "fragment",
         "carousel",
-        "list"
+        "author",
+        "tags",
+        "social_icons"
       ]
     }
   ]

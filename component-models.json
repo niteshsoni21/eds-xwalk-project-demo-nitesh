@@ -118,6 +118,26 @@
     ]
   },
   {
+    "id": "author",
+    "fields": [
+      {
+        "component": "text",
+        "name": "authorname",
+        "label": "Author Name",
+        "valueType": "string",
+        "required": true
+      },
+      {
+        "component": "date-time",
+        "label": "Date",
+        "name": "date",
+        "valueType": "date",
+        "placeholder": "YYYY-MM-DD",
+        "displayFormat": "Month D, Yr"
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {
@@ -223,57 +243,43 @@
     ]
   },
   {
-    "id": "list",
+    "id": "social_icons",
     "fields": [
       {
-        "component": "aem-content",
-        "name": "parentPage",
+        "component": "text",
+        "name": "facebook",
+        "label": "Facebook Link",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "linkedIn",
+        "label": "LinkedIn Link",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "youtube",
+        "label": "Youtube Link",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "instagram",
+        "label": "Instagram Link",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "tags",
+    "fields": [
+      {
+        "component": "aem-tag",
+        "name": "cq:tags",
         "value": "",
-        "label": "Parent Page",
-        "valueType": "string",
-        "validation": {
-          "rootPath": "/content/eds-xwalk-project-demo-nitesh"
-        }
-      },
-      {
-        "component": "number",
-        "name": "childDepth",
-        "label": "Child Depth",
-        "valueType": "number",
-        "value": 1,
-        "validation": {
-          "numberMin": 1,
-          "numberMax": 10,
-          "customErrorMsg": "Enter between 1 to 10."
-        }
-      },
-      {
-        "component": "select",
-        "label": "Sort Order",
-        "name": "sortOrder",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Ascending",
-            "value": "ascending"
-          },
-          {
-            "name": "Descending",
-            "value": "descending"
-          }
-        ]
-      },
-      {
-        "component": "number",
-        "name": "maxItems",
-        "label": "Max items",
-        "valueType": "number",
-        "value": 1,
-        "validation": {
-          "numberMin": 1,
-          "numberMax": 10,
-          "customErrorMsg": "Enter between 1 to 10."
-        }
+        "label": "Tags",
+        "valueType": "string"
       }
     ]
   }
