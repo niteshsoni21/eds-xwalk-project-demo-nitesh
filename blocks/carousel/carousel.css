@@ -146,7 +146,7 @@
       max-width: 77%;
     }
 
-      .carousel-link {
+    .swiper-slide .carousel-link {
       right: 15%;
     }
 
