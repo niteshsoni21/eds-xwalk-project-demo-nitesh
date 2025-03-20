@@ -18,6 +18,7 @@
   letter-spacing: 0.52px;
   color: #fff;
   max-width: 80%;
+  background-color: #0000001a;
 }
 
 .swiper-slide .carousel-text::after {
