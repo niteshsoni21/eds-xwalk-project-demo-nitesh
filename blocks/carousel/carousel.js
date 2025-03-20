@@ -47,9 +47,20 @@ export default function decorate(block) {
   const slides = document.querySelectorAll('.swiper-slide');
   const nextSlide = document.querySelector('.swiper-button-next.carousel-next');
   const prevSlide = document.querySelector('.swiper-button-prev.carousel-prev');
-  const slidesPerScroll = 3;
   const totalSlides = slides.length;
   let curSlide = 0;
+
+  function getSlidesPerScroll() {
+    if (window.innerWidth <= 768) {
+      return 1; // Mobile: 1 slide
+    }
+    if (window.innerWidth < 1024) {
+      return 2; // Tablet: 2 slides
+    }
+    return 3; // Desktop: 3 slides
+  }
+  const slidesPerScroll = getSlidesPerScroll();
+
   // Function to update slide positions and visibility
   function updateSlides() {
     slides.forEach((slide, indx) => {
