@@ -124,12 +124,25 @@
     top: 0;
 }
 
+.carousel-link {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: right;
+}
+
+.carousel-link a.button {
+    background-color: #2723235e;
+    font-size: small;
+}
+
 @media (width < 768px) {
   .swiper-slide {
     flex: 0 0 calc(100%);
   }
 
-  .swiper-slide .carousel-text {
+  .swiper-slide .carousel-text, .swiper-slide .carousel-link {
     max-width: 100%;
   }
 }
@@ -139,7 +152,7 @@
     flex: 0 0 calc(100% / 2);
   }
 
-  .swiper-slide .carousel-text {
+  .swiper-slide .carousel-text, .swiper-slide .carousel-link {
     max-width: 45%;
   }
 }
@@ -149,7 +162,7 @@
     flex: 0 0 calc(100% / 3);
   }
 
-  .swiper-slide .carousel-text {
+  .swiper-slide .carousel-text, .swiper-slide .carousel-link {
     max-width: 30%;
   }
 }
