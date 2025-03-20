@@ -55,9 +55,8 @@ export default function decorate(block) {
       return 1; // Mobile: 1 slide
     } else if (window.innerWidth < 1024) {
       return 2; // Tablet: 2 slides
-    } else if (window.innerWidth >= 1024) {
-      return 3; // Desktop: 3 slides
     }
+    return 3; // Desktop: 3 slides
   }
   const slidesPerScroll = getSlidesPerScroll();
 
