@@ -3,7 +3,7 @@ export default function decorate(block) {
   [...block.children].forEach((row) => {
     if (row.getAttribute('data-aue-model') === 'carouselSlide') {
       row.classList.add('swiper-slide');
-      const classes = ['image', 'text'];
+      const classes = ['image', 'text', 'link'];
       classes.forEach((e, j) => {
         row.children[j].classList.add(`carousel-${e}`);
       });
@@ -30,10 +30,14 @@ export default function decorate(block) {
 
       const carouselImageDiv = slide.querySelector('.carousel-image');
       const carouselTextDiv = slide.querySelector('.carousel-text');
+      const carouselButtonDiv = slide.querySelector('.carousel-link');
 
       anchorElement.appendChild(carouselImageDiv);
       anchorElement.appendChild(carouselTextDiv);
+      anchorElement.appendChild(carouselButtonDiv);
       slide.appendChild(anchorElement);
+
+      slide.querySelector('.carousel-link .button').textContent = 'READ MORE';
     });
   } else {
     previousButton.classList.add('feature-prev');
