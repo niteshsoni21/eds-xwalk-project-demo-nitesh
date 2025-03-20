@@ -3,7 +3,7 @@ export default function decorate(block) {
   [...block.children].forEach((row) => {
     if (row.getAttribute('data-aue-model') === 'carouselSlide') {
       row.classList.add('swiper-slide');
-      const classes = ['image', 'text','link'];
+      const classes = ['image', 'text', 'link'];
       classes.forEach((e, j) => {
         row.children[j].classList.add(`carousel-${e}`);
       });
