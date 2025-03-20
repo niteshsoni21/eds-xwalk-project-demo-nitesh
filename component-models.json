@@ -137,6 +137,18 @@
     ]
   },
   {
+    "id": "carousel",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "header",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "carouselSlide",
     "fields": [
       {

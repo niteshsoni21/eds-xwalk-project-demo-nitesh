@@ -33,6 +33,18 @@
   ],
   "models": [
     {
+      "id": "carousel",
+      "fields": [
+        {
+          "component": "richtext",
+          "name": "header",
+          "value": "",
+          "label": "Text",
+          "valueType": "string"
+        }
+      ]
+    },
+    {
       "id": "carouselSlide",
       "fields": [
         {
@@ -63,8 +75,7 @@
     {
       "id": "carousel",
       "components": [
-        "carouselSlide",
-        "text"
+        "carouselSlide"
       ]
     }
   ]
