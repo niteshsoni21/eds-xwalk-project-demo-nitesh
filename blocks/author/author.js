@@ -12,7 +12,9 @@ export default function decorate(block) {
       if (ele.getAttribute('data-aue-prop').startsWith('social')) {
         socialDiv = true;
         const li = document.createElement('li');
-        li.classList.add(propClass);
+        const href = document.createElement('a');
+        href.setAttribute('href', ele.innerHTML);
+        href.classList.add(propClass);
         li.innerHTML = ele.innerHTML;
         moveInstrumentation(ele, li);
         ul.append(li);

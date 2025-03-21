@@ -148,7 +148,8 @@
         "label": "Date",
         "name": "authorContent_date",
         "valueType": "date",
-        "placeholder": "YYYY-MM-DD"
+        "placeholder": "YYYY-MM-DD",
+        "valueFormat": "MMM DD, YYYY"
       },
       {
         "component": "aem-tag",
