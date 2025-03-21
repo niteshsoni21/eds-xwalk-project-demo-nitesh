@@ -13,8 +13,10 @@ export default function decorate(block) {
         socialDiv = true;
         const li = document.createElement('li');
         const href = document.createElement('a');
+        const img = document.createElement('picture');
         href.setAttribute('href', ele.innerHTML);
-        href.classList.add(propClass);
+        img.classList.add(propClass);
+        href.append(img);
         li.append(href);
         moveInstrumentation(ele, li);
         ul.append(li);

@@ -155,6 +155,7 @@
       {
         "component": "aem-tag",
         "name": "author_tags",
+        "value": "",
         "label": "Tags",
         "valueType": "string"
       },
