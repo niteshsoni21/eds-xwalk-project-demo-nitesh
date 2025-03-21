@@ -1,27 +1,29 @@
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
-  block.querySelectorAll('[data-aue-prop]').forEach((ele) => {
-    const classSuffix = 'author-';
-    const propClass = classSuffix.concat(ele.getAttribute('data-aue-prop').split('_')[1]);
-    ele.classList.add(propClass);
-  });
 
   const authorSocial = document.createElement('div');
   const blockAuthor = document.createElement('div');
 
   const ul = document.createElement('ul');
   let socialDiv = false;
+  const classSuffix = 'author-';
   [...block.children].forEach((row) => {
     row.querySelectorAll('[data-aue-prop]').forEach((ele) => {
       if (ele.getAttribute('data-aue-prop').startsWith('social')) {
         socialDiv = true;
         const li = document.createElement('li');
         moveInstrumentation(ele, li);
+        const propClass = classSuffix.concat(ele.getAttribute('data-aue-prop').split('_')[1]);
+        li.classList.add(propClass);
         ul.append(li);
       } else {
         const propertydiv = document.createElement('div');
-        propertydiv.innerHTML = `<p> ${ele.innerHTML} </p>`;
+        if (ele.getAttribute('data-aue-prop') != 'authorContent_title'){
+          propertydiv.innerHTML = `<p> ${ele.innerHTML} </p>`;
+        } else {
+          propertydiv.innerHTML = ele.innerHTML;
+        }
         blockAuthor.appendChild(propertydiv);
       }
       if (socialDiv) {
