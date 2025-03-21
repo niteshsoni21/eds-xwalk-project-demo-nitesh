@@ -44,7 +44,7 @@
           "label": "Date",
           "name": "authorContent_date",
           "valueType": "date",
-          "placeholder": "YYYY-MM-DD",
+          "placeholder": "MMM DD, YYYY",
           "displayFormat": "MMM DD, YYYY",
           "valueFormat": "MMM DD, YYYY"
         },
