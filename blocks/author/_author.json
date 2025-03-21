@@ -48,8 +48,7 @@
         },
         {
           "component": "aem-tag",
-          "name": "cq:tags",
-          "value": "",
+          "name": "author_tags",
           "label": "Tags",
           "valueType": "string"
         },

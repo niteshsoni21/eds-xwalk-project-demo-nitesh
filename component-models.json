@@ -112,6 +112,10 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "Left Container",
+            "value": "left-container"
           }
         ]
       }
@@ -148,8 +152,7 @@
       },
       {
         "component": "aem-tag",
-        "name": "cq:tags",
-        "value": "",
+        "name": "author_tags",
         "label": "Tags",
         "valueType": "string"
       },

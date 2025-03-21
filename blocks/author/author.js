@@ -16,6 +16,7 @@ export default function decorate(block) {
         li.innerHTML = ele.innerHTML;
         moveInstrumentation(ele, li);
         ul.append(li);
+        ul.classList.add('social-list');
       } else {
         const propertydiv = document.createElement('div');
         if (ele.getAttribute('data-aue-prop') !== 'authorContent_title') {
