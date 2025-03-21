@@ -138,7 +138,7 @@
       },
       {
         "component": "text",
-        "name": "authorContent_authorName",
+        "name": "authorContent_authorname",
         "label": "Author Name",
         "valueType": "string",
         "required": true
@@ -149,6 +149,7 @@
         "name": "authorContent_date",
         "valueType": "date",
         "placeholder": "YYYY-MM-DD",
+        "displayFormat": "MMM DD, YYYY",
         "valueFormat": "MMM DD, YYYY"
       },
       {
@@ -165,7 +166,7 @@
       },
       {
         "component": "text",
-        "name": "social_linkedIn",
+        "name": "social_linkedin",
         "label": "LinkedIn Link",
         "valueType": "string"
       },
