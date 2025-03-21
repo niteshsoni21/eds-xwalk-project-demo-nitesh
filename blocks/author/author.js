@@ -11,9 +11,9 @@ export default function decorate(block) {
       if (ele.getAttribute('data-aue-prop').startsWith('social')) {
         socialDiv = true;
         const li = document.createElement('li');
-        moveInstrumentation(ele, li);
         const propClass = classSuffix.concat(ele.getAttribute('data-aue-prop').split('_')[1]);
         li.classList.add(propClass);
+        moveInstrumentation(ele, li);
         ul.append(li);
       } else {
         const propertydiv = document.createElement('div');
