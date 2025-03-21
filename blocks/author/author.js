@@ -1,10 +1,8 @@
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
-
   const authorSocial = document.createElement('div');
   const blockAuthor = document.createElement('div');
-
   const ul = document.createElement('ul');
   let socialDiv = false;
   const classSuffix = 'author-';
@@ -19,7 +17,7 @@ export default function decorate(block) {
         ul.append(li);
       } else {
         const propertydiv = document.createElement('div');
-        if (ele.getAttribute('data-aue-prop') != 'authorContent_title'){
+        if (ele.getAttribute('data-aue-prop') !== 'authorContent_title') {
           propertydiv.innerHTML = `<p> ${ele.innerHTML} </p>`;
         } else {
           propertydiv.innerHTML = ele.innerHTML;
