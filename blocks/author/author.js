@@ -1,11 +1,14 @@
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
-  const blockAuthor = document.createElement('div');
+
   block.querySelectorAll('[data-aue-prop]').forEach((ele) => {
     const propClass = ele.getAttribute('data-aue-prop').split('_')[1];
-    ele.classList.add(propClass);
+    ele.classList.add('author-' + propClass);
   });
+
+  const authorSocial = document.createElement('div');
+  const blockAuthor = document.createElement('div');
 
   const ul = document.createElement('ul');
   let socialDiv = false;
@@ -16,11 +19,17 @@ export default function decorate(block) {
         const li = document.createElement('li');
         moveInstrumentation(ele, li);
         ul.append(li);
-        blockAuthor.append(ul);
+      } else {
+        const propertydiv = document.createElement('div');
+        propertydiv.innerHTML = `<p> ${row.children[1].innerHTML} </p>`;
+        blockAuthor.appendChild(propertydiv);
       }
       if (socialDiv) {
-        row.innerHTML = blockAuthor.innerHTML;
+        authorSocial.append(ul);
+        authorSocial.classList.add('author-social');
+        blockAuthor.appendChild(authorSocial);
       }
     });
   });
+  block.innerHTML = blockAuthor.innerHTML;
 }
