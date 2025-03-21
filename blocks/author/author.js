@@ -21,6 +21,6 @@ export default function decorate(block) {
       if (socialDiv) {
         row.innerHTML = blockAuthor.innerHTML;
       }
-    })
+    });
   });
 }
