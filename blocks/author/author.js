@@ -13,6 +13,7 @@ export default function decorate(block) {
         socialDiv = true;
         const li = document.createElement('li');
         li.classList.add(propClass);
+        li.innerHTML = ele.innerHTML;
         moveInstrumentation(ele, li);
         ul.append(li);
       } else {
