@@ -1,10 +1,10 @@
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
-
   block.querySelectorAll('[data-aue-prop]').forEach((ele) => {
-    const propClass = ele.getAttribute('data-aue-prop').split('_')[1];
-    ele.classList.add('author-' + propClass);
+    const classSuffix = 'author-';
+    const propClass = classSuffix.concat(ele.getAttribute('data-aue-prop').split('_')[1]);
+    ele.classList.add(propClass);
   });
 
   const authorSocial = document.createElement('div');
