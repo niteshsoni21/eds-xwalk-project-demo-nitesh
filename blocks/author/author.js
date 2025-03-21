@@ -21,7 +21,7 @@ export default function decorate(block) {
         ul.append(li);
       } else {
         const propertydiv = document.createElement('div');
-        propertydiv.innerHTML = `<p> ${row.children[1].innerHTML} </p>`;
+        propertydiv.innerHTML = `<p> ${ele.innerHTML} </p>`;
         blockAuthor.appendChild(propertydiv);
       }
       if (socialDiv) {
