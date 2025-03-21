@@ -8,10 +8,10 @@ export default function decorate(block) {
   const classSuffix = 'author-';
   [...block.children].forEach((row) => {
     row.querySelectorAll('[data-aue-prop]').forEach((ele) => {
+      const propClass = classSuffix.concat(ele.getAttribute('data-aue-prop').split('_')[1]);
       if (ele.getAttribute('data-aue-prop').startsWith('social')) {
         socialDiv = true;
         const li = document.createElement('li');
-        const propClass = classSuffix.concat(ele.getAttribute('data-aue-prop').split('_')[1]);
         li.classList.add(propClass);
         moveInstrumentation(ele, li);
         ul.append(li);
@@ -22,6 +22,7 @@ export default function decorate(block) {
         } else {
           propertydiv.innerHTML = ele.innerHTML;
         }
+        propertydiv.classList.add(propClass);
         blockAuthor.appendChild(propertydiv);
       }
       if (socialDiv) {
