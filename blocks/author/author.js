@@ -15,7 +15,7 @@ export default function decorate(block) {
         const href = document.createElement('a');
         href.setAttribute('href', ele.innerHTML);
         href.classList.add(propClass);
-        li.innerHTML = ele.innerHTML;
+        li.append(href);
         moveInstrumentation(ele, li);
         ul.append(li);
         ul.classList.add('social-list');
