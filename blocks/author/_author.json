@@ -44,14 +44,13 @@
           "label": "Date",
           "name": "authorContent_date",
           "valueType": "date",
-          "placeholder": "MMM DD, YYYY",
-          "displayFormat": "MMM DD, YYYY",
-          "valueFormat": "MMM DD, YYYY"
+          "placeholder": "dd-mm-yyyy",
+          "displayFormat": "dd-mm-yyyy",
+          "valueFormat": "dd-mm-yyy"
         },
         {
           "component": "aem-tag",
-          "name": "author_tags",
-          "value": "",
+          "name": "tags",
           "label": "Tags",
           "valueType": "string"
         },
