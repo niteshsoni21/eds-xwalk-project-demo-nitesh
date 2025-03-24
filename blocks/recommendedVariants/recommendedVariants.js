@@ -2,7 +2,7 @@ export default function decorate(block) {
   const variantsContainer = block.querySelector(':scope > div > div');
   const variantDiv = document.createElement('div');
   variantDiv.classList.add('car-variant');
-  alert ('Hi');
+  console.log('car-variant class added');
 
   variantDiv.innerHTML = `
     <div class='variant'>
@@ -14,4 +14,5 @@ export default function decorate(block) {
     </div>
   `;
   variantsContainer.appendChild(variantDiv);
+  console.log('variantDiv added');
 }
