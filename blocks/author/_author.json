@@ -50,7 +50,7 @@
         },
         {
           "component": "aem-tag",
-          "name": "cq:tags",
+          "name": "tags",
           "label": "Tags",
           "valueType": "string"
         },
