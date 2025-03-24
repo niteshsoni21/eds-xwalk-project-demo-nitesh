@@ -122,21 +122,20 @@
     ]
   },
   {
-    "id": "accordion",
+    "id": "accordionItem",
     "fields": [
       {
         "component": "text",
-        "valueType": "number",
-        "name": "columns",
+        "valueType": "string",
+        "name": "title",
         "value": "",
-        "label": "Columns"
+        "label": "Title"
       },
       {
-        "component": "text",
-        "valueType": "number",
-        "name": "rows",
-        "value": "",
-        "label": "Rows"
+        "component": "boolean",
+        "label": "Expand item by default",
+        "name": "boolean",
+        "valueType": "boolean"
       }
     ]
   },

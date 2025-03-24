@@ -26,6 +26,12 @@
   {
     "id": "accordion",
     "components": [
+      "accordionItem"
+    ]
+  },
+  {
+    "id": "accordionItem",
+    "components": [
       "text",
       "image",
       "button",

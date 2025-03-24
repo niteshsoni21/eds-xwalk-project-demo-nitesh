@@ -98,6 +98,21 @@
           }
         },
         {
+          "title": "Accordion Item",
+          "id": "accordionItem",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/section/v1/section",
+                "template": {
+                  "name": "Accordion Item",
+                  "model": "accordionItem"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Author",
           "id": "author",
           "plugins": {
