@@ -112,6 +112,10 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "Left Container",
+            "value": "left-container"
           }
         ]
       }
@@ -134,7 +138,7 @@
       },
       {
         "component": "text",
-        "name": "authorContent_authorName",
+        "name": "authorContent_authorname",
         "label": "Author Name",
         "valueType": "string",
         "required": true
@@ -144,11 +148,13 @@
         "label": "Date",
         "name": "authorContent_date",
         "valueType": "date",
-        "placeholder": "YYYY-MM-DD"
+        "placeholder": "MMM DD, YYYY",
+        "displayFormat": "MMM DD, YYYY",
+        "valueFormat": "MMM DD, YYYY"
       },
       {
         "component": "aem-tag",
-        "name": "cq:tags",
+        "name": "author_tags",
         "value": "",
         "label": "Tags",
         "valueType": "string"
@@ -161,7 +167,7 @@
       },
       {
         "component": "text",
-        "name": "social_linkedIn",
+        "name": "social_linkedin",
         "label": "LinkedIn Link",
         "valueType": "string"
       },
