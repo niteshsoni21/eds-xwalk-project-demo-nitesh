@@ -19,7 +19,7 @@
 }
 
 .recommended-variants-wrapper .variant-share-text::before {
-    background-image: url(../../styles/icons/share-icon.svg);
+    background-image: url('../../styles/icons/share-icon.svg');
     background-size: 100%;
     content: "";
     height: 12px;
@@ -35,13 +35,11 @@
     right: 15px;
     background: #000 0% 0% no-repeat padding-box;
     opacity: 1;
-    -webkit-transform: skew(-30deg);
 }
 
 .recommended-variants-wrapper .top-selling-text {
-    color: #FFFFFF;
+    color: #FFF;
     text-transform: uppercase;
-    -webkit-transform: skew(30deg);
     padding: 2px 8px;
 }
 
@@ -73,7 +71,6 @@
 }
 
 .variant-feature {
-    font: 18px/24px 'Roboto Bold';
     color: #304659;
     padding-bottom: 16px;
 }
@@ -87,7 +84,7 @@
 }
 
 .variant-feature-ul .variant-feature-list:before {
-    background-image: url(../../styles/icons/check-icons.svg);
+    background-image: url('../../styles/icons/check-icons.svg');
     background-size: 100%;
     content: "";
     height: 11px;
@@ -123,9 +120,6 @@
 
 .variant-button-container .test-drive-btn {
     text-decoration: underline;
-}
-
-.variant-button-container .test-drive-btn {
     color: #202020;
 }
 
@@ -137,7 +131,7 @@
     text-align: center;
 }
 
-.variant-button-container .compare-cta input[type=checkbox] {
+.variant-button-container .compare-cta input[type='checkbox'] {
     accent-color: #292985;
     cursor: pointer;
 }
