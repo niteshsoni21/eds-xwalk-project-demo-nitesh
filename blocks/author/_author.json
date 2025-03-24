@@ -52,8 +52,7 @@
           "component": "aem-tag",
           "name": "tags",
           "label": "Tags",
-          "rootPath": "/content/cq:tags/demo-auto",
-          "value": "",
+          "value": "taxanomy.json",
           "valueType": "string"
         },
         {
