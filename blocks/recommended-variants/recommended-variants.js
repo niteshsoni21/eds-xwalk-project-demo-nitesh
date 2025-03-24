@@ -15,6 +15,6 @@ export default function decorate(block) {
     </div>
   `;
 
-  block.parentElement.appendChild(variantDiv);
+  block.appendChild(variantDiv);
   console.log('variantDiv added');
 }
