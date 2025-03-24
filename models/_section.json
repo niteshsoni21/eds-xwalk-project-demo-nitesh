@@ -58,7 +58,8 @@
         "carousel",
         "author",
         "tags",
-        "video"
+        "video",
+        "accordion"
       ]
     }
   ]

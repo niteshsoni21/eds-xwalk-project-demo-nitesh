@@ -19,7 +19,19 @@
       "carousel",
       "author",
       "tags",
-      "video"
+      "video",
+      "accordion"
+    ]
+  },
+  {
+    "id": "accordion",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "hero",
+      "teaser"
     ]
   },
   {

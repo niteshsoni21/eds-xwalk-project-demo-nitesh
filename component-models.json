@@ -122,6 +122,25 @@
     ]
   },
   {
+    "id": "accordion",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "columns",
+        "value": "",
+        "label": "Columns"
+      },
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "rows",
+        "value": "",
+        "label": "Rows"
+      }
+    ]
+  },
+  {
     "id": "author",
     "fields": [
       {
@@ -156,8 +175,11 @@
         "component": "aem-tag",
         "name": "tags",
         "label": "Tags",
-        "value": "taxanomy.json",
-        "valueType": "string"
+        "value": "",
+        "valueType": "string",
+        "validation": {
+          "rootPath": "/content/cq:tags"
+        }
       },
       {
         "component": "text",
