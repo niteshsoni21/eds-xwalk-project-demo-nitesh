@@ -24,8 +24,8 @@ export default async function decorate(block) {
           <img src='${variant.variantImage._path}' alt='${variant.variantTitle}' class='variant-img' />
           <div class='variant-share-section'>
             <p class='variant-share-text'>Share</p>
-            <div class='top-selling-container'>
-              <p class='top-selling-text ${variant.topSelling}'>Top Selling</p>
+            <div class='top-selling-container ${variant.topSelling}'>
+              <p class='top-selling-text'>Top Selling</p>
             </div>
           </div>
         </div>
