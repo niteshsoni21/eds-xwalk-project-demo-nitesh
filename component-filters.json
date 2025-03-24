@@ -37,7 +37,10 @@
       "button",
       "title",
       "hero",
-      "teaser"
+      "cards",
+      "fragment",
+      "author",
+      "tags"
     ]
   },
   {
