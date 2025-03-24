@@ -18,7 +18,7 @@ export default async function decorate(block) {
     const variantDiv = document.createElement('div');
     variantDiv.classList.add('variant-card');
 
-    const imagePath = Object.values(variant.variantImage)[0];      variantDiv.innerHTML = `
+    const imagePath = Object.values(variant.variantImage)[0];
 
     variantDiv.innerHTML = `
       <div class="card-top">
