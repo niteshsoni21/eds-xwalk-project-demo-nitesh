@@ -176,10 +176,7 @@
         "name": "tags",
         "label": "Tags",
         "value": "",
-        "valueType": "string",
-        "validation": {
-          "rootPath": "/content/cq:tags"
-        }
+        "valueType": "string"
       },
       {
         "component": "text",
