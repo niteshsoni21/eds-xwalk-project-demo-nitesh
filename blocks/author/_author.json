@@ -52,8 +52,8 @@
           "component": "aem-tag",
           "name": "tags",
           "label": "Tags",
-          "valueType": "string",
-          "rootPath": "/content/cq:tags"
+          "rootPath": "/content/cq:tags",
+          "valueType": "string"
         },
         {
           "component": "text",
