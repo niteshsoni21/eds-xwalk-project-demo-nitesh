@@ -2,6 +2,7 @@ export default function decorate(block) {
   const variantsContainer = block.querySelector(':scope > div > div');
   const variantDiv = document.createElement('div');
   variantDiv.classList.add('car-variant');
+  alert ('Hi');
 
   variantDiv.innerHTML = `
     <div class='variant'>
