@@ -3,9 +3,7 @@ export default async function decorate(block) {
 
   const response = await fetch('/graphql/execute.json/eds-nitesh-demo/carVariantList', {
     method: 'GET',
-    headers: {
-      'Content-Type': 'application/json'
-    }
+    headers: { 'Content-Type': 'application/json' }
   });
 
   if (!response.ok) {
