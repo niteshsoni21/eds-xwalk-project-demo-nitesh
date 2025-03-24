@@ -1,5 +1,6 @@
 export default function decorate(block) {
-  const variantsContainer = block.querySelector(':scope > div > div');
+  block.classList.add('variants-wrapper');
+
   const variantDiv = document.createElement('div');
   variantDiv.classList.add('car-variant');
   console.log('car-variant class added');
@@ -13,6 +14,7 @@ export default function decorate(block) {
       <div class='variant-features'><ul>\n<li>Safety First</li>\n<li>Lorem Ipsum Daller Sit</li>\n<li>Steel Wheels With Wheel Cover</li>\n<li>Projector Headlamps</li>\n<li>Chrome Accentuated Front Grille</li>\n</ul></div>
     </div>
   `;
-  variantsContainer.appendChild(variantDiv);
+
+  block.parentElement.appendChild(variantDiv);
   console.log('variantDiv added');
 }
