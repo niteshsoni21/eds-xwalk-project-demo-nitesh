@@ -291,7 +291,7 @@
     ]
   },
   {
-    "id": "recommendedVariants",
+    "id": "recommended-variants",
     "fields": [
       {
         "component": "text",
