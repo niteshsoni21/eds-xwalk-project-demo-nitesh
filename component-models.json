@@ -309,7 +309,7 @@
     ]
   },
   {
-    "id": "tags",
+    "id": "aem-tag-picker",
     "fields": [
       {
         "component": "aem-tag",
