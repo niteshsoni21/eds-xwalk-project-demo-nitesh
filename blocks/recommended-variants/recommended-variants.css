@@ -143,7 +143,6 @@
     color: #202020;
 }
 
-
 .recommended-variants-wrapper .test-drive-btn a {
     text-decoration: underline;
     color: #202020;
@@ -152,4 +151,34 @@
 
 .top-selling-container.false {
     display: none;
+}
+
+.swiper {
+    width: 100%;
+    padding: 20px;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+.variant-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+}
+.variant-img {
+    width: 100%;
+    border-radius: 10px;
+}
+.variant-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.variant-price {
+    color: #e60000;
+    font-size: 16px;
 }
