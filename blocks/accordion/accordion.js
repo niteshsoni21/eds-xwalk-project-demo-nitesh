@@ -14,7 +14,7 @@ function collapseItem(item) {
   content.style.height = `${content.scrollHeight}px`;
   requestAnimationFrame(() => {
     item.classList.remove('expanded');
-    content.removeAttribute('style');
+    content.style.height = 0;
   });
 }
 
