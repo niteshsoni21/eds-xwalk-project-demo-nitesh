@@ -18,8 +18,6 @@ function collapseItem(item) {
   });
 }
 
-
-
 export default function decorate(block) {
   const accordion = document.createElement('div');
   const accordionItem = document.createElement('div');
