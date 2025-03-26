@@ -32,15 +32,17 @@ export default function decorate(block) {
     accordionItem.appendChild(accordionTitle);
     accordionItem.appendChild(accordionContent);
     accordion.appendChild(accordionItem);
-
-    accordionItem.addEventListener('click', () => {
-      if (!accordionItem.classList.contains('expanded')) {
-        accordion.filter((i) => i.classList.contains('expanded')).forEach((i) => collapseItem(i));
-        expandItem(accordionItem);
-      } else {
-        collapseItem(accordionItem);
-      }
-    });
   });
   block.innerHTML = accordion.innerHTML;
 }
+
+document.querySelectorAll('.accordion-item').forEach(element => {
+  element.addEventListener('click', () => {
+    if (!element.classList.contains('expanded')) {
+      document.querySelectorAll('.accordion-item').forEach(ele => { if (ele.classList.contains('expanded')) { ele.classList.remove('expanded') } });
+      expandItem(element);
+    } else {
+      collapseItem(element);
+    }
+  });
+});
