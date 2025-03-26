@@ -14,7 +14,7 @@ function collapseItem(item) {
   content.style.height = `${content.scrollHeight}px`;
   requestAnimationFrame(() => {
     item.classList.remove('expanded');
-    content.style.height = 0;
+    content.removeAttribute('style');
   });
 }
 
@@ -38,7 +38,11 @@ export default function decorate(block) {
   document.querySelectorAll('.accordion-item').forEach((element) => {
     element.addEventListener('click', () => {
       if (!element.classList.contains('expanded')) {
-        document.querySelectorAll('.accordion-item').forEach((ele) => { if (ele.classList.contains('expanded')) { ele.classList.remove('expanded'); } });
+/*        document.querySelectorAll('.accordion-item').forEach((ele) => {
+          if (ele.classList.contains('expanded')) {
+            ele.classList.remove('expanded');
+          }
+        });*/
         expandItem(element);
       } else {
         collapseItem(element);
