@@ -27,8 +27,8 @@ export default function decorate(block) {
     const accordionTitle = document.createElement('div');
     accordionTitle.classList.add('accordion-item-header');
     accordionContent.classList.add('accordion-item-content');
-    accordionTitle.innerHTML = row.children[0].innerText;
-    accordionContent.innerHTML = row.children[1].children[0].innerHTML;
+    accordionTitle.innerHTML = row.children[0].children[0].innerHTML;
+    accordionContent.innerHTML = row.children[0].children[1].innerHTML;
     accordionItem.appendChild(accordionTitle);
     accordionItem.appendChild(accordionContent);
     accordion.appendChild(accordionItem);
