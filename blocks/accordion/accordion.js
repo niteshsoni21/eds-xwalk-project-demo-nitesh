@@ -40,7 +40,7 @@ export default function decorate(block) {
       if (!element.classList.contains('expanded')) {
         document.querySelectorAll('.accordion-item').forEach((ele) => {
           if (ele.classList.contains('expanded')) {
-            collapseItem(element);
+            collapseItem(ele);
           }
         });
         expandItem(element);
