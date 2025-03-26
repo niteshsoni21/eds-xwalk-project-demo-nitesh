@@ -26,22 +26,7 @@
   {
     "id": "accordion",
     "components": [
-      "accordionItem"
-    ]
-  },
-  {
-    "id": "accordionItem",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title",
-      "hero",
-      "cards",
-      "fragment",
-      "carousel",
-      "author",
-      "tags"
+      "accordion-item"
     ]
   },
   {
