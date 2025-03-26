@@ -34,15 +34,15 @@ export default function decorate(block) {
     accordion.appendChild(accordionItem);
   });
   block.innerHTML = accordion.innerHTML;
-}
 
-document.querySelectorAll('.accordion-item').forEach((element) => {
-  element.addEventListener('click', () => {
-    if (!element.classList.contains('expanded')) {
-      document.querySelectorAll('.accordion-item').forEach((ele) => { if (ele.classList.contains('expanded')) { ele.classList.remove('expanded'); } });
-      expandItem(element);
-    } else {
-      collapseItem(element);
-    }
+  document.querySelectorAll('.accordion-item').forEach((element) => {
+    element.addEventListener('click', () => {
+      if (!element.classList.contains('expanded')) {
+        document.querySelectorAll('.accordion-item').forEach((ele) => { if (ele.classList.contains('expanded')) { ele.classList.remove('expanded'); } });
+        expandItem(element);
+      } else {
+        collapseItem(element);
+      }
+    });
   });
-});
+}
