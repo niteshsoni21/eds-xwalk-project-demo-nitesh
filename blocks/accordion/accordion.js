@@ -38,13 +38,11 @@ export default function decorate(block) {
   document.querySelectorAll('.accordion-item').forEach((element) => {
     element.addEventListener('click', () => {
       if (!element.classList.contains('expanded')) {
-        /*
-          document.querySelectorAll('.accordion-item').forEach((ele) => {
+        document.querySelectorAll('.accordion-item').forEach((ele) => {
           if (ele.classList.contains('expanded')) {
-            ele.classList.remove('expanded');
+            collapseItem(element);
           }
         });
-        */
         expandItem(element);
       } else {
         collapseItem(element);
