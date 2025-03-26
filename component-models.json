@@ -240,7 +240,7 @@
     "id": "aem-tag-picker",
     "fields": [
       {
-        "component": "aem-tag",
+        "component": "text",
         "label": "AEM Tag Picker",
         "name": "cq:tags",
         "valueType": "string"
