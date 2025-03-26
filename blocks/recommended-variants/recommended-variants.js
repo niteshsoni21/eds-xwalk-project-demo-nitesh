@@ -34,7 +34,7 @@ export default async function decorate(block) {
           <p class='variant-price'>${variant.variantPrice}</p>
           <p class='variant-price-text'>${variant.variantPriceLocation}</p>
         </div>
-        <p class="variant-feature">Features</p>
+        <p class='variant-feature'>Features</p>
         ${variant.variantFeatures.html}
       </div>
     `;
@@ -42,7 +42,7 @@ export default async function decorate(block) {
   });
 
   [...block.children].forEach((row) => {
-    if (row.getAttribute('class') === "variant-card") {
+    if (row.getAttribute('class') === 'variant-card') {
       row.classList.add('swiper-slide');
     }
   });
@@ -85,10 +85,10 @@ export default async function decorate(block) {
 
   function getSlidesPerScroll() {
     if (window.innerWidth <= 768) {
-        return 1; // Mobile: 1 slide
+      return 1; // Mobile: 1 slide
     }
     if (window.innerWidth < 1024) {
-        return 2; // Tablet: 2 slides
+      return 2; // Tablet: 2 slides
     }
     return 3; // Desktop: 3 slides
   }
