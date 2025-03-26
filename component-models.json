@@ -122,6 +122,27 @@
     ]
   },
   {
+    "id": "accordion",
+    "fields": [
+      {
+        "component": "radio-group",
+        "label": "Expand first item",
+        "name": "classes",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "first-open"
+          },
+          {
+            "name": "No",
+            "value": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "accordion-item",
     "fields": [
       {

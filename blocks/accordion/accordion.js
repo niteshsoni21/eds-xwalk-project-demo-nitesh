@@ -35,6 +35,10 @@ export default function decorate(block) {
   });
   block.innerHTML = accordion.innerHTML;
 
+  if (block.classList.contains('first-open')) {
+    block.children[0].classList.add('expanded');
+  }
+
   document.querySelectorAll('.accordion-item').forEach((element) => {
     element.addEventListener('click', () => {
       if (!element.classList.contains('expanded')) {
