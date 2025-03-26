@@ -35,14 +35,14 @@ export default function decorate(block) {
     accordionItem.appendChild(accordionContent);
     accordion.appendChild(accordionItem);
 
-    accordionItem.addEventListener(('click', () => {
+    accordionItem.addEventListener('click', () => {
       if (!accordionItem.classList.contains('expanded')) {
         accordion.filter((i) => i.classList.contains('expanded')).forEach((i) => collapseItem(i));
         expandItem(accordionItem);
       } else {
         collapseItem(accordionItem);
       }
-    }));
+    });
   });
   block.innerHTML = accordion.innerHTML;
 }
