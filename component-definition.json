@@ -159,7 +159,7 @@
         },
         {
           "title": "Tag Picker",
-          "id": "aem-tag-picker",
+          "id": "aemtagpicker",
           "plugins": {
             "xwalk": {
               "page": {
