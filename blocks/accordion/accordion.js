@@ -20,15 +20,15 @@ function collapseItem(item) {
 
 export default function decorate(block) {
   const accordion = document.createElement('div');
-  const accordionItem = document.createElement('div');
   [...block.children].forEach((row) => {
+    const accordionItem = document.createElement('div');
     accordionItem.classList.add('accordion-item');
     const accordionContent = document.createElement('div');
     const accordionTitle = document.createElement('div');
     accordionTitle.classList.add('accordion-item-header');
     accordionContent.classList.add('accordion-item-content');
     accordionTitle.innerHTML = row.children[0].innerText;
-    accordionContent.innerHTML = row.children[1].innerHTML;
+    accordionContent.innerHTML = row.children[1].children[0].innerHTML;
     accordionItem.appendChild(accordionTitle);
     accordionItem.appendChild(accordionContent);
     accordion.appendChild(accordionItem);

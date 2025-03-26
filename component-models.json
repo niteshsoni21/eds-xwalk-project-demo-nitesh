@@ -126,16 +126,16 @@
     "fields": [
       {
         "component": "text",
-        "name": "label",
+        "name": "accordionItem_label",
         "value": "",
         "label": "Label",
         "valueType": "string"
       },
       {
         "component": "richtext",
-        "name": "text",
+        "name": "accordionItem_content",
         "value": "",
-        "label": "Text",
+        "label": "Content",
         "valueType": "string"
       }
     ]
