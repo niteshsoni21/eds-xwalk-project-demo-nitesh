@@ -48,10 +48,6 @@
     padding-left: 27px;
 }
 
-.recommended-variants-wrapper .swiper-slide {
-    border: 1px solid #707070;
-}
-
 .variant-price-section {
     padding-top: 15px;
     padding-bottom: 23px;
@@ -157,7 +153,9 @@
     width: 100%;
     padding: 20px;
 }
+
 .recommended-variants-wrapper .swiper-slide {
+    border: 1px solid #707070;
     display: flex;
     justify-content: center;
 }
@@ -165,7 +163,6 @@
 .variant-card {
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 10%);
     padding: 20px;
     width: 300px;
     text-align: center;
@@ -180,9 +177,4 @@
 .variant-title {
     font-size: 18px;
     font-weight: bold;
-}
-
-.variant-price {
-    color: #e60000;
-    font-size: 16px;
 }
