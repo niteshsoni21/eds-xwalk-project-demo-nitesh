@@ -24,7 +24,6 @@ export default function decorate(block) {
   [...block.children].forEach((row) => {
     const accordionItem = document.createElement('div');
     accordionItem.classList.add('accordion-item');
-    moveInstrumentation(row, accordionItem);
     const accordionContent = document.createElement('div');
     const accordionTitle = document.createElement('div');
     accordionTitle.classList.add('accordion-item-header');
@@ -35,6 +34,7 @@ export default function decorate(block) {
     accordionContent.innerHTML = row.children[0].children[1].innerHTML;
     accordionItem.appendChild(accordionTitle);
     accordionItem.appendChild(accordionContent);
+    moveInstrumentation(row, accordionItem);
     accordion.appendChild(accordionItem);
   });
   block.innerHTML = accordion.innerHTML;

@@ -38,7 +38,7 @@
       "fields": [
         {
           "component": "radio-group",
-          "label": "Expand first item",
+          "label": "Expand first item by default",
           "name": "classes",
           "valueType": "string",
           "options": [
