@@ -28,16 +28,20 @@ export default function decorate(block) {
     const accordionTitle = document.createElement('div');
     accordionTitle.classList.add('accordion-item-header');
     accordionContent.classList.add('accordion-item-content');
-    moveInstrumentation(row.children[0].children[0], accordionTitle);
-    moveInstrumentation(row.children[0].children[1], accordionContent);
     accordionTitle.innerHTML = row.children[0].children[0].innerHTML;
     accordionContent.innerHTML = row.children[0].children[1].innerHTML;
     accordionItem.appendChild(accordionTitle);
     accordionItem.appendChild(accordionContent);
     moveInstrumentation(row, accordionItem);
+    moveInstrumentation(row.children[0].children[0], accordionTitle);
+    moveInstrumentation(row.children[0].children[1], accordionContent);
     accordion.appendChild(accordionItem);
   });
   block.innerHTML = accordion.innerHTML;
+
+  if (block.classList.contains('first-open')) {
+    block.children[0].classList.add('expanded');
+  }
 
   document.querySelectorAll('.accordion-item').forEach((element) => {
     element.addEventListener('click', () => {
