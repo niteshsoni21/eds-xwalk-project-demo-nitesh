@@ -23,6 +23,7 @@ export default function decorate(block) {
         ul.classList.add('social-list');
       } else {
         const propertydiv = document.createElement('div');
+        moveInstrumentation(ele, propertydiv);
         if (ele.getAttribute('data-aue-prop') !== 'authorContent_title') {
           propertydiv.innerHTML = `<p> ${ele.innerHTML} </p>`;
         } else {

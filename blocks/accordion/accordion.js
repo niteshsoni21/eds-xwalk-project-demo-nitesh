@@ -1,3 +1,4 @@
+import { moveInstrumentation } from '../../scripts/scripts.js';
 function expandItem(item) {
   const [, content] = item.children;
   content.style.height = `${content.scrollHeight}px`;
@@ -23,12 +24,15 @@ export default function decorate(block) {
   [...block.children].forEach((row) => {
     const accordionItem = document.createElement('div');
     accordionItem.classList.add('accordion-item');
+    moveInstrumentation(row, accordionItem);
     const accordionContent = document.createElement('div');
     const accordionTitle = document.createElement('div');
     accordionTitle.classList.add('accordion-item-header');
     accordionContent.classList.add('accordion-item-content');
+    moveInstrumentation(ele, row.children[0].children[0]);
+    moveInstrumentation(ele, row.children[0].children[1]);
     accordionTitle.innerHTML = row.children[0].children[0].innerHTML;
-    accordionContent.innerHTML = row.children[1].children[0].innerHTML;
+    accordionContent.innerHTML = row.children[0].children[1].innerHTML;
     accordionItem.appendChild(accordionTitle);
     accordionItem.appendChild(accordionContent);
     accordion.appendChild(accordionItem);

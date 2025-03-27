@@ -122,18 +122,39 @@
     ]
   },
   {
+    "id": "accordion",
+    "fields": [
+      {
+        "component": "radio-group",
+        "label": "Expand first item",
+        "name": "classes",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "first-open"
+          },
+          {
+            "name": "No",
+            "value": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "accordion-item",
     "fields": [
       {
         "component": "text",
-        "name": "label",
+        "name": "accordionItem_label",
         "value": "",
         "label": "Label",
         "valueType": "string"
       },
       {
         "component": "richtext",
-        "name": "content",
+        "name": "accordionItem_content",
         "value": "",
         "label": "Content",
         "valueType": "string"
