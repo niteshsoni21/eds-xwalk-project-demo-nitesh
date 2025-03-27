@@ -1,4 +1,5 @@
 import { moveInstrumentation } from '../../scripts/scripts.js';
+
 function expandItem(item) {
   const [, content] = item.children;
   content.style.height = `${content.scrollHeight}px`;
@@ -18,7 +19,6 @@ function collapseItem(item) {
     content.style.height = 0;
   });
 }
-
 export default function decorate(block) {
   const accordion = document.createElement('div');
   [...block.children].forEach((row) => {
