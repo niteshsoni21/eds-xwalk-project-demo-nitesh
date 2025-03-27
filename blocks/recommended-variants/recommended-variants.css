@@ -63,7 +63,8 @@
     display: inline-block;
     height: 34px;
     vertical-align: middle;
-    margin-top: 8px;
+    margin-top: 12px;
+    font-size: 14px;
 }
 
 .variant-feature {
@@ -156,7 +157,7 @@
 
 .recommended-variants-wrapper .swiper-slide {
     border: 1px solid #707070;
-    display: flex;
+    display: inline-block;
     justify-content: center;
 }
 
@@ -177,4 +178,8 @@
 .variant-title {
     font-size: 18px;
     font-weight: bold;
+}
+
+.variant-desc ul {
+    text-align: left;
 }
