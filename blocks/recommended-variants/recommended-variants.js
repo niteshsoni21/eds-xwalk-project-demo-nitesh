@@ -45,6 +45,9 @@ export default async function decorate(block) {
     if (row.getAttribute('class') === 'variant-card') {
       row.classList.add('swiper-slide');
     }
+    if (row.getAttribute('data-aue-model') === 'title') {
+      row.classList.add('recommended-variants-header');
+    }
   });
 
   const previousButton = document.createElement('div');

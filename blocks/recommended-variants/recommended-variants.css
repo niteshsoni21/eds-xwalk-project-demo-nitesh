@@ -45,7 +45,7 @@
 
 .recommended-variants-wrapper .variant-desc {
     margin-top: 64px;
-    padding-left: 27px;
+    padding-left: 5px;
 }
 
 .variant-price-section {
@@ -55,6 +55,7 @@
 
 .variant-price {
     display: inline-block;
+    font-size: 24px;
 }
 
 .variant-price-text {
@@ -69,19 +70,20 @@
 
 .variant-feature {
     color: #304659;
-    padding-bottom: 16px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-.variant-feature-ul {
+.variant-feature ul {
     min-height: 170px;
 }
 
-.variant-feature-ul .variant-feature-list {
+.variant-feature ul li {
     padding-bottom: 10px;
 }
 
-.variant-feature-ul .variant-feature-list::before {
-    background-image: url('../../styles/icons/check-icons.svg');
+.variant-feature ul li::before {
+    background-image: url('../../icons/check-icons.svg');
     background-size: 100%;
     content: "";
     height: 11px;
@@ -90,7 +92,7 @@
     margin-right: 11px;
 }
 
-.variant-feature-ul .variant-feature-text {
+.variant-feature ul li p {
     color: #3B5266;
     display: inline-block;
 }
@@ -158,6 +160,7 @@
 .recommended-variants-wrapper .swiper-slide {
     border: 1px solid #707070;
     display: inline-block;
+    text-align: left;
     justify-content: center;
 }
 
@@ -182,4 +185,15 @@
 
 .variant-desc ul {
     text-align: left;
+}
+
+.recommended-variants-header {
+    display: block;
+    font-size: var(--heading-font-size-xl);
+    width: 100%;
+    margin-top: 0.8em;
+    margin-bottom: 0.5em;
+    font-family: var(--heading-font-family);
+    font-weight: 600;
+    line-height: 1.25;
 }
