@@ -25,6 +25,9 @@
                     "name": "cq:tags",
                     "label": "Text",
                     "valueType": "string",
+                    "validation": {
+                        "rootPath": "/content/cq:tags/ixm-aem"
+                    },
                     "required": true
                 }
                
