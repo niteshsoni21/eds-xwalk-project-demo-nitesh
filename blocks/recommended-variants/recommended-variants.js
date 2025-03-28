@@ -30,25 +30,25 @@ export default async function decorate(block) {
       </div>
       <div class='variant-desc'>
         <p class='variant-title'>${variant.variantTitle}</p>
-        <div class="variant-price-section">
+        <div class='variant-price-section'>
           <p class='variant-price'>${variant.variantPrice}</p>
           <p class='variant-price-text'>${variant.variantPriceLocation}</p>
         </div>
         <p class='variant-feature'>Features</p>
         ${variant.variantFeatures.html}
       </div>
-      <div class="variant-button-container">
-      	<button class="test-drive-btn">
-      		<a href='${variant.testDriveUrl}'>Book a Test Drive</a>
-      	</button>
-      	<button class="specification-btn">
-      		<a href='${variant.fullSpecificationUrl}'>VIEW FULL SPECIFICATIONS</a>
-      	</button>
-      	<div class="compare-cta ${variant.allowToCompare}">
-      		<input type="checkbox" name="compare" value="compare">
-      			<label class="unchecked">Add to Compare</label>
-      		</input>
-      	</div>
+      <div class='variant-button-container'>
+        <button class='test-drive-btn'>
+          <a href='${variant.testDriveUrl}'>Book a Test Drive</a>
+        </button>
+        <button class='specification-btn'>
+          <a href='${variant.fullSpecificationUrl}'>VIEW FULL SPECIFICATIONS</a>
+        </button>
+        <div class='compare-cta ${variant.allowToCompare}'>
+          <input type='checkbox' name='compare' value='compare'>
+            <label class='unchecked'>Add to Compare</label>
+          </input>
+        </div>
       </div>
     `;
     block.appendChild(variantDiv);
