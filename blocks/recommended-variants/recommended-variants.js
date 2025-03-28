@@ -37,6 +37,19 @@ export default async function decorate(block) {
         <p class='variant-feature'>Features</p>
         ${variant.variantFeatures.html}
       </div>
+      <div class="variant-button-container">
+      	<button class="test-drive-btn">
+      		<a href='${variant.testDriveUrl}'>Book a Test Drive</a>
+      	</button>
+      	<button class="specification-btn">
+      		<a href='${variant.fullSpecificationUrl}'>VIEW FULL SPECIFICATIONS</a>
+      	</button>
+      	<div class="compare-cta ${variant.allowToCompare}">
+      		<input type="checkbox" name="compare" value="compare">
+      			<label class="unchecked">Add to Compare</label>
+      		</input>
+      	</div>
+      </div>
     `;
     block.appendChild(variantDiv);
   });
