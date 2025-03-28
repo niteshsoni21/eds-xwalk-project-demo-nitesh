@@ -21,8 +21,8 @@
             "fields": [
                 
                 {
-                    "component": "richtext",
-                    "name": "textContent_text",
+                    "component": "aem-tag",
+                    "name": "cq:tags",
                     "label": "Text",
                     "valueType": "string",
                     "required": true
