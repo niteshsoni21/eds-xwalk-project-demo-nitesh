@@ -45,10 +45,10 @@ export default async function decorate(block) {
     if (row.getAttribute('class') === 'variant-card') {
       row.classList.add('swiper-slide');
     }
-    if (row.getAttribute('data-aue-prop') === 'title') {
-      row.classList.add('recommended-variants-header');
-    }
   });
+  if (block.children[0].getAttribute('class') !== 'variant-card') {
+    block.children[0].classList.add('recommended-variants-header');
+  }
 
   const previousButton = document.createElement('div');
   const nextButton = document.createElement('div');
