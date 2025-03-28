@@ -7,6 +7,8 @@
 .recommended-variants-wrapper {
     margin-top: 34px;
     overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 
 .recommended-variants-wrapper .card-top {
@@ -15,8 +17,9 @@
 
 .recommended-variants-wrapper .variant-share-text {
     position: absolute;
-    top: 15px;
-    left: 34px;
+    top: 10px;
+    left: 16px;
+    font-size: 14px;
 }
 
 .recommended-variants-wrapper .variant-share-text::before {
@@ -36,17 +39,19 @@
     right: 15px;
     background: #000 0% 0% no-repeat padding-box;
     opacity: 1;
+    -webkit-transform: skew(-19deg);
 }
 
 .recommended-variants-wrapper .top-selling-text {
     color: #FFF;
     text-transform: uppercase;
-    padding: 2px 8px;
+    padding: 0px 5px;
+    font-size: 12px;
 }
 
 .recommended-variants-wrapper .variant-desc {
-    margin-top: 64px;
-    padding-left: 5px;
+    margin-top: 35px;
+    padding: 5px 12px;
 }
 
 .recommended-variants-wrapper .variant-card a:hover {
@@ -172,8 +177,6 @@
 
 .variant-card {
     background: #fff;
-    border-radius: 10px;
-    padding: 20px;
     width: 300px;
     margin-left: 5px;
     text-align: center;
@@ -182,7 +185,6 @@
 
 .variant-img {
     width: 100%;
-    border-radius: 10px;
 }
 
 .variant-title {
@@ -192,6 +194,8 @@
 
 .variant-desc ul {
     text-align: left;
+    font-size: 14px;
+    padding-left: 22px;
 }
 
 .recommended-variants-header {
@@ -208,23 +212,22 @@
 .swiper-button-prev.variants-prev {
     background: url('../../icons/arrow-left-mobile.svg') no-repeat 0 0;
     left: auto;
-    right: 160px;
+    right: 165px;
     width: 20px;
     height: 22px;
-    position: static;
-    top: 36px;
-    display: inline-block;
+    position: absolute;
+    top: 56px;
 }
 
 .swiper-button-next.variants-next {
     transform: rotate(180deg);
     background: url('../../icons/arrow-left-mobile.svg') no-repeat 0 0;
-    width: 20px;
-    position: static;
-    height: 22px;
     left: auto;
     right: 110px;
-    top: 42px;
+    width: 20px;
+    height: 22px;
+    position: absolute;
+    top: 53px;
 }
 
 .variant-card.swiper-slide.hidden-slide {
