@@ -218,7 +218,7 @@
 
 .swiper-button-next.variants-next {
     transform: rotate(180deg);
-    background: url(../../icons/arrow-left-mobile.svg) no-repeat 0 0;
+    background: url('../../icons/arrow-left-mobile.svg') no-repeat 0 0;
     width: 20px;
     position: static;
     height: 22px;
