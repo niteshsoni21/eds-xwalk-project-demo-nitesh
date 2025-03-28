@@ -192,7 +192,7 @@
     ]
   },
   {
-    "id": "aem-tag-picker",
+    "id": "tagpicker",
     "fields": [
       {
         "component": "richtext",

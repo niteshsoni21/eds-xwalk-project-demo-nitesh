@@ -1,7 +1,7 @@
 {
     "definitions": [{
         "title": "Tag Picker",
-        "id": "aemtagpicker",
+        "id": "tagpicker",
         "plugins": {
           "xwalk": {
             "page": {
@@ -17,7 +17,7 @@
     ],
     "models": [
         {
-            "id": "aem-tag-picker",
+            "id": "tagpicker",
             "fields": [
                 
                 {
