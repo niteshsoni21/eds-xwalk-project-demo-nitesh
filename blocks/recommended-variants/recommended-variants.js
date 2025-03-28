@@ -59,7 +59,7 @@ export default async function decorate(block) {
     previousButton.classList.add('variants-prev');
     nextButton.classList.add('variants-next');
 
-    const swiperSlides = block.querySelectorAll('.swiper-slide');
+    const swiperSlides = block.querySelectorAll('.swiper-slide.variant-card');
 
     swiperSlides.forEach((slide) => {
       const anchorElement = document.createElement('a');
@@ -73,14 +73,14 @@ export default async function decorate(block) {
       slide.appendChild(anchorElement);
     });
   } else {
-    previousButton.classList.add('feature-prev');
-    nextButton.classList.add('feature-next');
+    previousButton.classList.add('variants-prev');
+    nextButton.classList.add('variants-next');
   }
 
   block.parentElement.appendChild(previousButton);
   block.parentElement.appendChild(nextButton);
 
-  const slides = document.querySelectorAll('.swiper-slide');
+  const slides = document.querySelectorAll('.swiper-slide.variant-card');
   const nextSlide = document.querySelector('.swiper-button-next.variants-next');
   const prevSlide = document.querySelector('.swiper-button-prev.variants-prev');
   const totalSlides = slides.length;

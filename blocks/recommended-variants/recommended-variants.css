@@ -226,3 +226,7 @@
     right: 110px;
     top: 42px;
 }
+
+.variant-card.swiper-slide.hidden-slide {
+    display: none;
+}
