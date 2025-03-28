@@ -39,13 +39,12 @@
     right: 15px;
     background: #000 0% 0% no-repeat padding-box;
     opacity: 1;
-    -webkit-transform: skew(-19deg);
 }
 
 .recommended-variants-wrapper .top-selling-text {
     color: #FFF;
     text-transform: uppercase;
-    padding: 0px 5px;
+    padding: 0 5px;
     font-size: 12px;
 }
 
