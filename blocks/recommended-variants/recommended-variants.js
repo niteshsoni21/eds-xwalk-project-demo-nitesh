@@ -80,7 +80,7 @@ export default async function decorate(block) {
 
       const variantsImageDiv = slide.querySelector('.card-top');
       const variantsTextDiv = slide.querySelector('.variant-desc');
-      const variantsButtonDiv = slide.querySelector('variant-button-container');
+      const variantsButtonDiv = slide.querySelector('.variant-button-container');
 
       anchorElement.appendChild(variantsImageDiv);
       anchorElement.appendChild(variantsTextDiv);
