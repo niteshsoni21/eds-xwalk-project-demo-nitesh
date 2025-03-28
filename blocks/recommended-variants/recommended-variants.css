@@ -151,13 +151,19 @@
     color: #202020;
 }
 
-.recommended-variants-wrapper .variant-desc .recommended-variants-wrapper .test-drive-btn a {
+.recommended-variants-wrapper .test-drive-btn a {
     text-decoration: underline;
     color: #202020;
 }
 
 .top-selling-container.false {
     display: none;
+}
+
+.recommended-variants-wrapper .specification-btn a {
+    color: #292985;
+    padding: 14px 15px;
+    border: 1px solid #292985;
 }
 
 .swiper {
@@ -288,10 +294,10 @@
     }
 
     .variant-title {
-        font-size: 18px;
+        font-size: 21px;
     }
 
     .variant-price {
-        font-size: 24px;
+        font-size: 21px;
     }
 }
