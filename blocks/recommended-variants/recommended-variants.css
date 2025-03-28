@@ -155,7 +155,6 @@
 .recommended-variants-wrapper .variant-desc .recommended-variants-wrapper .test-drive-btn a {
     text-decoration: underline;
     color: #202020;
-
 }
 
 .top-selling-container.false {
@@ -171,6 +170,7 @@
     border: 1px solid #707070;
     display: inline-block;
     text-align: left;
+    width: 32%;
     justify-content: center;
 }
 
@@ -231,4 +231,44 @@
 
 .variant-card.swiper-slide.hidden-slide {
     display: none;
+}
+
+@media (width < 768px) {
+    .recommended-variants-wrapper .swiper-slide {
+        width: 90%;
+    }
+
+    .recommended-variants-header {
+        font-size: 30px;
+        width: 70%;
+    }
+
+    .swiper-button-next.variants-next {
+        right: 82px;
+    }
+
+    .swiper-button-prev.variants-prev {
+        right: 120px;
+        top: 102px;
+    }
+}
+
+@media (width >= 768px) {
+    .recommended-variants-wrapper .swiper-slide {
+        width: 44%;
+    }
+
+    .swiper-button-prev.variants-prev {
+        right: 200px;
+    }
+
+    .swiper-button-next.variants-next {
+        right: 145px;
+    }
+}
+
+@media (width >= 1024px) {
+    .recommended-variants-wrapper .swiper-slide {
+        width: 32%;
+    }
 }
