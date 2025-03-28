@@ -112,8 +112,76 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "Left Container",
+            "value": "left-container"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "author",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "authorContent_title",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "authorContent_subtitle",
+        "label": "Sub Title",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "authorContent_authorname",
+        "label": "Author Name",
+        "valueType": "string",
+        "required": true
+      },
+      {
+        "component": "date-time",
+        "label": "Date",
+        "name": "authorContent_date",
+        "valueType": "date",
+        "placeholder": "MMM DD, YYYY",
+        "displayFormat": "MMM DD, YYYY",
+        "valueFormat": "MMM DD, YYYY"
+      },
+      {
+        "component": "aem-tag",
+        "name": "author_tags",
+        "value": "",
+        "label": "Tags",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "social_facebook",
+        "label": "Facebook Link",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "social_linkedin",
+        "label": "LinkedIn Link",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "social_youtube",
+        "label": "Youtube Link",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "social_instagram",
+        "label": "Instagram Link",
+        "valueType": "string"
       }
     ]
   },
@@ -133,6 +201,37 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "carouselSlide",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Link"
       }
     ]
   },
@@ -188,6 +287,42 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "recommended-variants",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "tags",
+    "fields": [
+      {
+        "component": "aem-tag",
+        "name": "cq:tags",
+        "value": "",
+        "label": "Tags",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "video",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "video",
+        "label": "Video",
+        "multi": false
       }
     ]
   }

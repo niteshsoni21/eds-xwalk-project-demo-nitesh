@@ -1,0 +1,7 @@
+.video-container video{
+    width: 100%;
+}
+
+.video.block{
+    margin-bottom: 44px;
+}
