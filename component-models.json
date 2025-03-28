@@ -195,8 +195,8 @@
     "id": "tagpicker",
     "fields": [
       {
-        "component": "aem-tag",
-        "name": "cq:tags",
+        "component": "aem-content",
+        "name": "reference",
         "label": "Text",
         "valueType": "string",
         "validation": {
