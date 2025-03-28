@@ -119,13 +119,6 @@
     text-transform: uppercase;
 }
 
-.recommended-variants-wrapper .variant-desc .variant-button-container .specification-btn a {
-    color: #292985;
-    padding: 14px 10%;
-    border: 1px solid #292985;
-    display: inline-block;
-}
-
 .variant-button-container .test-drive-btn {
     text-decoration: underline;
     color: #202020;
