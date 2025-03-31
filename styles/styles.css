@@ -255,3 +255,13 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+@media (width >= 1023px) {
+    .section.left-container {
+        padding-top: 40px;
+        padding-bottom: 39px;
+        width: 57.5%;
+        margin-right: 10.4%;
+        float: left;
+    }
+}
