@@ -1,60 +1,76 @@
 [
   {
     "id": "main",
-    "components": [
-      "section"
-    ]
+    "components": [ "section", "spacer" ]
+  },
+  {
+    "id": "columns",
+    "components": []
+  },
+  {
+    "id": "column",
+    "components": [ "button", "google-map", "image", "link-pfx", "text", "title" ]
   },
   {
     "id": "section",
     "components": [
-      "text",
-      "image",
+      "accordion",
+      "articleMetadata",
+      "audio-embed",
+      "breadcrumb",
       "button",
-      "title",
-      "hero",
+      "button-pfx",
       "cards",
-      "columns",
-      "fragment",
+      "careers",
       "carousel",
-      "author",
-      "tags",
-      "video",
-      "accordion"
-    ]
-  },
-  {
-    "id": "accordion",
-    "components": [
-      "accordion-item"
+      "case-study",
+      "code",
+      "columns",
+      "cookie-banner",
+      "download",
+      "embed",
+      "events",
+      "fragment",
+      "google-map",
+      "hero",
+      "iframe",
+      "image",
+      "imageText",
+      "image-zoom",
+      "learningCenter",
+      "left-right-boxed",
+      "link-pfx",
+      "marketo-form",
+      "partner-showcase",
+      "quote",
+      "relatedArticles",
+      "richtext",
+      "search",
+      "socialshare",
+      "spacer",
+      "stats",
+      "tabbed-filter",
+      "table",
+      "tabs",
+      "text",
+      "title",
+      "title-pfx"
     ]
   },
   {
     "id": "cards",
-    "components": [
-      "card"
-    ]
+    "components": [ "card" ]
   },
   {
-    "id": "carousel",
-    "components": [
-      "carouselSlide",
-      "title"
-    ]
+    "id": "accordion",
+    "components": [ "accordion-item" ]
   },
   {
-    "id": "columns",
-    "components": [
-      "column"
-    ]
+    "id": "tabs",
+    "components": [ "tab-item" ]
   },
   {
-    "id": "column",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title"
-    ]
+    "id": "table",
+    "components": [ "row" ]
   }
 ]
