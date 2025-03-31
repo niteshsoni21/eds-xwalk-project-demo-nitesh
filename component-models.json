@@ -194,7 +194,7 @@
       },
       {
         "component": "aem-tag",
-        "name": "tags",
+        "name": "authorContent_tags",
         "label": "Tags",
         "value": "",
         "valueType": "string"
