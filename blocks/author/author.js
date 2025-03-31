@@ -1,7 +1,14 @@
 export default function decorate(block) {
-  const blockAuthor = document.createElement('div');
-  blockAuthor.innerHTML = block.innerHTML;
+  const classes = ['title', 'subtitle', 'authorname', 'date', 'tags', 'facebook', 'linkedin', 'youtube', 'instagram'];
+
+  block.querySelectorAll('p').forEach((ele) => {
+    classes.forEach((e) => {
+      ele.classList.add(`author-${e}`);
+    });
+  });
+
   /*
+  const blockAuthor = document.createElement('div');
   const authorSocial = document.createElement('div');
   const ul = document.createElement('ul');
   let socialDiv = false;
@@ -40,5 +47,4 @@ export default function decorate(block) {
     });
   });
   */
-  block.innerHTML = blockAuthor.innerHTML;
 }

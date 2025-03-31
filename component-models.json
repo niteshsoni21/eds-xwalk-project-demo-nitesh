@@ -195,10 +195,9 @@
         "valueFormat": "dd/mm/yyyy"
       },
       {
-        "component": "aem-tag",
+        "component": "text",
         "name": "tags",
         "label": "Tags",
-        "value": "Demo Auto : Features / The Countryside Explorer",
         "valueType": "string"
       },
       {
