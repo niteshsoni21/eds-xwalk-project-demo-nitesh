@@ -168,7 +168,8 @@
         "component": "richtext",
         "name": "authorContent_title",
         "label": "Title",
-        "valueType": "string"
+        "valueType": "string",
+        "required": true
       },
       {
         "component": "text",
@@ -188,16 +189,17 @@
         "label": "Date",
         "name": "authorContent_date",
         "valueType": "date",
-        "placeholder": "DD-MM-YYYY",
-        "displayFormat": "DD-MM-YYYY",
-        "valueFormat": "DD-MM-YYYY"
+        "value": "",
+        "placeholder": "dd/mm/yyyy",
+        "displayFormat": "dd/mm/yyyy",
+        "valueFormat": "dd/mm/yyyy"
       },
       {
         "component": "aem-tag",
         "name": "authorContent_tags",
         "label": "Tags",
         "value": "",
-        "valueType": "string"
+        "valueType": "string[]"
       },
       {
         "component": "text",
