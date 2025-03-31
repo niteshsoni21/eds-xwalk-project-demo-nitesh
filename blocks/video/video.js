@@ -1,5 +1,9 @@
+import { fetchPlaceholders } from '../../commons/scripts/aem.js';
+
 export default function decorate(block) {
   const videoUrl = block.querySelector('.video.block .button-container a');
+  const publishDomain =  await fetchPlaceholders();
+  const videoSrc =  publishDomain + videoUrl.getAttribute('href');
 
   const videoContainer = document.createElement('div');
   videoContainer.classList.add('video-container');
@@ -11,7 +15,7 @@ export default function decorate(block) {
   video.toggleAttribute('loop', true);
   video.toggleAttribute('playsinline', true);
   const source = document.createElement('source');
-  source.setAttribute('src', videoUrl.getAttribute('href'));
+  source.setAttribute('src', videoSrc);
   source.setAttribute('type', 'video/mp4');
   video.append(source);
 
