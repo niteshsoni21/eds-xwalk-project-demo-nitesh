@@ -29,7 +29,8 @@ export default function decorate(block) {
         const paragraphcontent = document.createElement('p');
         moveInstrumentation(ele, propertydiv);
         moveAttributes(ele, propertydiv);
-        propertydiv.innerHTML = ele.innerHTML;
+        paragraphcontent.innerHTML = ele.innerHTML;
+        propertydiv.appendChild(paragraphcontent);
         blockAuthor.appendChild(propertydiv);
       }
     });
