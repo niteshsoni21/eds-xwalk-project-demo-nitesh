@@ -14,6 +14,7 @@ export default function decorate(block) {
   [...block.children].forEach((row) => {
     row.querySelectorAll('p').forEach((ele) => {
       if (ele.className.includes('social-')) {
+        ele.className = ele.className.replace('social-', '');
         const li = document.createElement('li');
         const href = document.createElement('a');
         const img = document.createElement('picture');
@@ -22,7 +23,6 @@ export default function decorate(block) {
         li.append(href);
         moveInstrumentation(ele, li);
         moveAttributes(ele, li);
-        li.className = ele.className.replace('social-', '');
         ul.append(li);
       } else {
         const propertydiv = document.createElement('div');
