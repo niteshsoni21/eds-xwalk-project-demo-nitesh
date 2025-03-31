@@ -25,20 +25,14 @@
           "name": "tags",
           "value": "",
           "label": "Tags",
-          "valueType": "string[]",
-          "taxonomy":  "/taxonomy"
-        }
-      ]
-    },
-    {
-      "id": "suggestedfeatures",
-      "fields": [
+          "valueType": "string[]"
+        },
         {
           "component": "aem-tag",
           "name": "suggestedfeatures",
           "value": "",
           "label": "Suggested Features",
-          "valueType": "string"
+          "valueType": "string[]"
         }
       ]
     }

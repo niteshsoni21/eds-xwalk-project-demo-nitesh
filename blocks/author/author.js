@@ -1,8 +1,9 @@
-import { moveInstrumentation } from '../../scripts/scripts.js';
+//import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
-  const authorSocial = document.createElement('div');
   const blockAuthor = document.createElement('div');
+  blockAuthor.innerHTML = block.innerHTML;
+  /*const authorSocial = document.createElement('div');
   const ul = document.createElement('ul');
   let socialDiv = false;
   const classSuffix = 'author-';
@@ -38,6 +39,6 @@ export default function decorate(block) {
         blockAuthor.appendChild(authorSocial);
       }
     });
-  });
+  });*/
   block.innerHTML = blockAuthor.innerHTML;
 }
