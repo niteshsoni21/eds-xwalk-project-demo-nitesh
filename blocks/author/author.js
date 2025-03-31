@@ -1,4 +1,4 @@
-import { moveInstrumentation } from '../../scripts/scripts.js';
+import { moveAttributes, moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
   const classes = ['title', 'subtitle', 'authorname', 'date', 'tags', 'social-facebook', 'social-linkedin', 'social-youtube', 'social-instagram'];
@@ -22,10 +22,13 @@ export default function decorate(block) {
         href.append(img);
         li.append(href);
         moveInstrumentation(ele, li);
+        moveAttributes(ele, li);
         ul.append(li);
       } else {
         const propertydiv = document.createElement('div');
+        const paragraphcontent = document.createElement('p');
         moveInstrumentation(ele, propertydiv);
+        moveAttributes(ele, propertydiv);
         propertydiv.innerHTML = ele.innerHTML;
         blockAuthor.appendChild(propertydiv);
       }
