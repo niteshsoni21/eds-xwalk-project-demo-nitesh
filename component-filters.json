@@ -1,76 +1,60 @@
 [
   {
     "id": "main",
-    "components": [ "section", "spacer" ]
-  },
-  {
-    "id": "columns",
-    "components": []
-  },
-  {
-    "id": "column",
-    "components": [ "button", "google-map", "image", "link-pfx", "text", "title" ]
+    "components": [
+      "section"
+    ]
   },
   {
     "id": "section",
     "components": [
-      "accordion",
-      "articleMetadata",
-      "audio-embed",
-      "breadcrumb",
-      "button",
-      "button-pfx",
-      "cards",
-      "careers",
-      "carousel",
-      "case-study",
-      "code",
-      "columns",
-      "cookie-banner",
-      "download",
-      "embed",
-      "events",
-      "fragment",
-      "google-map",
-      "hero",
-      "iframe",
-      "image",
-      "imageText",
-      "image-zoom",
-      "learningCenter",
-      "left-right-boxed",
-      "link-pfx",
-      "marketo-form",
-      "partner-showcase",
-      "quote",
-      "relatedArticles",
-      "richtext",
-      "search",
-      "socialshare",
-      "spacer",
-      "stats",
-      "tabbed-filter",
-      "table",
-      "tabs",
       "text",
+      "image",
+      "button",
       "title",
-      "title-pfx"
+      "hero",
+      "cards",
+      "columns",
+      "fragment",
+      "carousel",
+      "author",
+      "tags",
+      "video",
+      "accordion"
+    ]
+  },
+  {
+    "id": "accordion",
+    "components": [
+      "accordion-item"
     ]
   },
   {
     "id": "cards",
-    "components": [ "card" ]
+    "components": [
+      "card"
+    ]
   },
   {
-    "id": "accordion",
-    "components": [ "accordion-item" ]
+    "id": "carousel",
+    "components": [
+      "carouselSlide",
+      "title"
+    ]
   },
   {
-    "id": "tabs",
-    "components": [ "tab-item" ]
+    "id": "columns",
+    "components": [
+      "column"
+    ]
   },
   {
-    "id": "table",
-    "components": [ "row" ]
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
   }
 ]
