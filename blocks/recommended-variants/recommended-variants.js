@@ -6,7 +6,7 @@ export default async function decorate(block) {
   const { publishDomain } = await fetchPlaceholders();
   const graphQlEndpoint = `${publishDomain}/graphql/execute.json/eds-nitesh-demo/carVariantList`;
 
-  const response = await fetch(graphQlEndpointurl, {
+  const response = await fetch(graphQlEndpoint, {
     method: 'GET',
     headers: { 'Content-Type': 'application/json' },
   });
