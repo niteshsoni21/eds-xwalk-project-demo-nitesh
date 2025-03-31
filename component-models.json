@@ -198,8 +198,8 @@
         "component": "aem-tag",
         "name": "authorContent_tags",
         "label": "Tags",
-        "value": "",
-        "valueType": "string[]"
+        "value": "The Countryside Explorer",
+        "valueType": "string"
       },
       {
         "component": "text",
