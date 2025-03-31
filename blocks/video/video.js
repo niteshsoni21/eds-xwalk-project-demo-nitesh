@@ -1,9 +1,9 @@
 import { fetchPlaceholders } from '../../scripts/aem.js';
 
-export default function decorate(block) {
+export default async function decorate(block) {
   const videoUrl = block.querySelector('.video.block .button-container a');
-  const { publishDomain } = fetchPlaceholders();
-  const videoSrc = `${publishDomain}${videoUrl.getAttribute('href')}`;
+  const { publishdomain } = await fetchPlaceholders();
+  const videoSrc = `${publishdomain}${videoUrl.getAttribute('href')}`;
 
   const videoContainer = document.createElement('div');
   videoContainer.classList.add('video-container');
