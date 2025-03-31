@@ -19,10 +19,10 @@ export default function decorate(block) {
         const href = document.createElement('a');
         const img = document.createElement('picture');
         href.setAttribute('href', ele.innerHTML);
-        href.append(img);
-        href.setAttribute('title', ele.className.replace('author-'));
+        href.setAttribute('title', ele.className.replace('author-',''));
         moveInstrumentation(ele, li);
-        moveAttributes(ele, li);
+        moveAttributes(ele, img);
+        href.append(img);
         li.append(href);
         ul.append(li);
       } else {
