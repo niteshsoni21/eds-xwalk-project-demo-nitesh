@@ -196,9 +196,9 @@
       },
       {
         "component": "aem-tag",
-        "name": "authorContent_tags",
+        "name": "tags",
         "label": "Tags",
-        "value": "The Countryside Explorer",
+        "value": "Demo Auto : Features / The Countryside Explorer",
         "valueType": "string"
       },
       {
