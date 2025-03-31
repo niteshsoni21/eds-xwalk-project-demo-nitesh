@@ -33,6 +33,10 @@
             {
               "name": "Highlight",
               "value": "highlight"
+            },
+            {
+              "name": "Left Container",
+              "value": "left-container"
             }
           ]
         }
@@ -50,7 +54,12 @@
         "hero",
         "cards",
         "columns",
-        "fragment"
+        "fragment",
+        "carousel",
+        "author",
+        "tags",
+        "video",
+        "recommended-variants"
       ]
     }
   ]
