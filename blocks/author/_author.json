@@ -71,7 +71,7 @@
         {
           "component": "text",
           "name": "social_youtube",
-          "label": "Youtube Link",
+          "label": "YouTube Link",
           "valueType": "string"
         },
         {
