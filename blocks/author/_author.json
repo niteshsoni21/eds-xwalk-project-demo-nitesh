@@ -30,7 +30,7 @@
         {
           "component": "text",
           "name": "authorContent_subtitle",
-          "label": "Sub Title",
+          "label": "Subtitle",
           "valueType": "string"
         },
         {
