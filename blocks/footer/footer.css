@@ -1,7 +1,9 @@
 footer {
-  background-color: var(--light-color);
+  background-color: #222222;
+  color: #ffffff;
   font-size: var(--body-font-size-xs);
 }
+
 
 footer .footer > div {
   margin: auto;
@@ -16,5 +18,16 @@ footer .footer p {
 @media (width >= 900px) {
   footer .footer > div {
     padding: 40px 32px 24px;
+  }
+
+  .footer .columns > div {
+    align-items: normal;
+  }
+
+  .footer a.button.secondary {
+    border: none;
+    padding-left: 0;
+    margin: 0;
+    color: #a7a7a7;
   }
 }
