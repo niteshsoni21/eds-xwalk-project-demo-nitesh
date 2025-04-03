@@ -18,17 +18,17 @@ export default async function decorate(block) {
 
   block.append(footer);
 
-  let lastChildDiv = document.querySelector('.columns-5-cols > div > div:last-child');
+  const lastChildDiv = document.querySelector('.columns-5-cols > div > div:last-child');
 
   if (lastChildDiv) {
     lastChildDiv.classList.add('contactus');
-    let pictures = lastChildDiv.querySelectorAll('picture');
+    const pictures = lastChildDiv.querySelectorAll('picture');
 
-    pictures.forEach(picture => {
-        picture.classList.add('social');
+    pictures.forEach((picture) => {
+      picture.classList.add('social');
     });
   }
 
-  let lastSection = document.querySelector('.footer > div > div:last-child');
+  const lastSection = document.querySelector('.footer > div > div:last-child');
   lastSection.classList.add('copyrightBar');
 }
