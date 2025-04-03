@@ -30,5 +30,5 @@ export default async function decorate(block) {
   }
 
   const lastSection = document.querySelector('.footer > div > div:last-child');
-  lastSection.classList.add('copyrightBar');
+  lastSection.classList.add('copyright-bar');
 }
