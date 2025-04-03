@@ -27,7 +27,7 @@ footer .contactus p strong {
 footer .contactus picture.social img {
    height: 32px;
    width: 32px;
-   padding-left: 5px;
+   padding: 5px 5px 5px 0;
 }
 
 footer  .section.copyright-bar {
