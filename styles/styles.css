@@ -258,10 +258,14 @@ main .section.highlight {
 
 @media (width >= 1023px) {
     .section.left-container {
-        padding-top: 40px;
         padding-bottom: 39px;
-        width: 60%;
+        width: 58%;
         margin-right: 8%;
+        float: left;
+    }
+
+    .section.right-container {
+        width: 32%;
         float: left;
     }
 
