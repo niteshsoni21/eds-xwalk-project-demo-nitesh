@@ -1,17 +1,16 @@
 export default function decorate(block) {
   block.classList.add('swiper-wrapper');
-  [...block.children].forEach((row) => {
-    if (row.getAttribute('data-aue-model') === 'carouselSlide') {
-      row.classList.add('swiper-slide');
-      const classes = ['image', 'text', 'link'];
-      classes.forEach((e, j) => {
-        row.children[j].classList.add(`carousel-${e}`);
-      });
-    }
-    if (row.getAttribute('data-aue-model') === 'title') {
-      row.classList.add('carousel-header');
-    }
+  [...block.children].slice(1).forEach((row) => {
+    row.classList.add('swiper-slide');
+    const classes = ['image', 'text', 'link'];
+    classes.forEach((e, j) => {
+      row.children[j].classList.add(`carousel-${e}`);
+    });
   });
+
+  if (block.children[0]) {
+    block.children[0].classList.add('carousel-header');
+  }
 
   const previousButton = document.createElement('div');
   const nextButton = document.createElement('div');

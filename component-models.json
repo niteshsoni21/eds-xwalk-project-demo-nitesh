@@ -116,6 +116,10 @@
           {
             "name": "Left Container",
             "value": "left-container"
+          },
+          {
+            "name": "Right Container",
+            "value": "right-container"
           }
         ]
       }
