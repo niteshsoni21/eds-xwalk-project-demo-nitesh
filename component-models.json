@@ -353,7 +353,7 @@
         "name": "tab2"
       },
       {
-        "component": "text",
+        "component": "richtext",
         "label": "Title",
         "name": "suggestedfeature_title",
         "valueType": "string"
