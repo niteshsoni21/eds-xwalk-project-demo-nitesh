@@ -307,19 +307,6 @@
     ]
   },
   {
-    "id": "tableHeaders",
-    "fields": [
-      {
-        "component": "richtext",
-        "name": "headers",
-        "value": "",
-        "label": "Table Headers",
-        "valueType": "string",
-        "multi": false
-      }
-    ]
-  },
-  {
     "id": "tableRows",
     "fields": [
       {

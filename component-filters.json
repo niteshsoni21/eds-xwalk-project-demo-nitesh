@@ -56,7 +56,6 @@
   {
     "id": "table",
     "components": [
-      "tableHeaders",
       "tableRows"
     ]
   }
