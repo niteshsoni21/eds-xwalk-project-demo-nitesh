@@ -37,6 +37,14 @@
             {
               "name": "Left Container",
               "value": "left-container"
+            },
+            {
+              "name": "Right Container",
+              "value": "right-container"
+            },
+            {
+              "name": "Tags Block Container",
+              "value": "tagsblock-container"
             }
           ]
         }
