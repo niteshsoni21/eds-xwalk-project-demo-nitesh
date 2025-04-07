@@ -362,27 +362,35 @@
         "component": "container",
         "label": "Tag Details",
         "name": "suggestedfeature_tagdetails",
-        "valueType": "string[]",
-        "multi": true,
+        "valueType": "string",
         "fields": [
           {
-            "component": "text",
-            "name": "linkText",
-            "value": "",
-            "label": "Tag",
-            "valueType": "string"
-          },
-          {
-            "component": "aem-content",
-            "name": "link",
-            "value": "",
-            "label": "Link",
-            "valueType": "string",
-            "validation": {
-              "rootPath": "/content/eds-xwalk-project-demo-nitesh"
-            }
+            "component": "suggested-features",
+            "multi": true
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "suggested-features",
+    "fields": [
+      {
+        "component": "text",
+        "name": "linkText",
+        "value": "",
+        "label": "Tag",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "link",
+        "value": "",
+        "label": "Link",
+        "valueType": "string",
+        "validation": {
+          "rootPath": "/content/eds-xwalk-project-demo-nitesh"
+        }
       }
     ]
   },
