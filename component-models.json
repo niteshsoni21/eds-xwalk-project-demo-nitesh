@@ -365,32 +365,32 @@
         "valueType": "string",
         "fields": [
           {
-            "component": "container",
-            "label": "Tag Item",
-            "name": "suggestedfeature_tagitem",
-            "valueType": "string",
-            "multi": true,
-            "fields": [
-              {
-                "component": "text",
-                "name": "suggestedfeature_linkText",
-                "value": "",
-                "label": "Tag",
-                "valueType": "string"
-              },
-              {
-                "component": "aem-content",
-                "name": "suggestedfeature_link",
-                "value": "",
-                "label": "Link",
-                "valueType": "string",
-                "validation": {
-                  "rootPath": "/content/eds-xwalk-project-demo-nitesh"
-                }
-              }
-            ]
+            "component": "suggestedtag-item",
+            "multi": true
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "suggestedtag-item",
+    "fields": [
+      {
+        "component": "text",
+        "name": "suggestedfeature_linkText",
+        "value": "",
+        "label": "Tag",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "suggestedfeature_link",
+        "value": "",
+        "label": "Link",
+        "valueType": "string",
+        "validation": {
+          "rootPath": "/content/eds-xwalk-project-demo-nitesh"
+        }
       }
     ]
   },
