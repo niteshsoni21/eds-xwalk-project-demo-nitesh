@@ -14,10 +14,10 @@ export default function decorate(block) {
     const tagsBlock = document.createElement('div');
     row.classList.add(tagClasses[i]);
     const ul = document.createElement('ul');
-    const length = row.querySelectorAll('p').length;
+    const len = row.querySelectorAll('p').length;
     ul.classList.add(ulClasses[i]);
     ul.id = ulClasses[i];
-    if (length < 2) {
+    if (len < 2) {
       row.querySelectorAll('p').forEach((ele) => {
         updateTagsList(ele, ul, ulClasses);
       });
