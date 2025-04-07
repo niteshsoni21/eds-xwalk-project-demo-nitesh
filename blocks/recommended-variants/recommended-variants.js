@@ -1,7 +1,12 @@
+import { fetchPlaceholders } from '../../scripts/aem.js';
+
 export default async function decorate(block) {
   block.classList.add('variant-details');
 
-  const response = await fetch('/graphql/execute.json/eds-nitesh-demo/carVariantList', {
+  const { publishDomain } = await fetchPlaceholders();
+  const graphQlEndpoint = `${publishDomain}/graphql/execute.json/eds-nitesh-demo/carVariantList`;
+
+  const response = await fetch(graphQlEndpoint, {
     method: 'GET',
     headers: { 'Content-Type': 'application/json' },
   });
