@@ -20,6 +20,7 @@
       "author",
       "tags",
       "video",
+      "table",
       "recommended-variants"
     ]
   },
@@ -48,8 +49,13 @@
       "text",
       "image",
       "button",
-      "title",
-      "video"
+      "title"
+    ]
+  },
+  {
+    "id": "table",
+    "components": [
+      "tableRows"
     ]
   }
 ]
