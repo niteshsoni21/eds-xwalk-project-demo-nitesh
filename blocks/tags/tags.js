@@ -1,7 +1,5 @@
-function updateTagsList(ele, ul, ulClasses) {
+function updateTagsList(ele, ul) {
   const tags = ele.innerHTML.split(',');
-  ul.classList.add(ulClasses[i]);
-  ul.id = ulClasses[i];
   tags.forEach((tag) => {
     const li = document.createElement('li');
     li.innerHTML = tag;
@@ -17,6 +15,8 @@ export default function decorate(block) {
     row.classList.add(tagClasses[i]);
     const ul = document.createElement('ul');
     let length = row.querySelectorAll('p').length;
+    ul.classList.add(ulClasses[i]);
+    ul.id = ulClasses[i];
     if (length < 2) {
       row.querySelectorAll('p').forEach((ele) => {
         updateTagsList(ele, ul, ulClasses);
@@ -26,10 +26,9 @@ export default function decorate(block) {
       titleDiv.classList.add('tags-title');
       titleDiv.innerHTML = row.querySelectorAll('p')[0].innerHTML;
       tagsBlock.append(titleDiv);
-      updateTagsList(row.querySelectorAll('p')[1], ul, ulClasses);
+      updateTagsList(row.querySelectorAll('p')[1], ul);
     }
     tagsBlock.append(ul);
-    });
     row.innerHTML = tagsBlock.innerHTML;
   });
 }
