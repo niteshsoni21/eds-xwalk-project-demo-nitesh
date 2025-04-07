@@ -11,7 +11,7 @@ export default function decorate(block) {
     if (!rowContent) return;
 
     const isHeaderText = maybeHeaderEl?.textContent?.trim().toLowerCase();
-    const cells = Array.from(rowContent.querySelectorAll('p')).map(p => p.textContent.trim());
+    const cells = Array.from(rowContent.querySelectorAll('p')).map((p) => p.textContent.trim());
 
     if (isHeaderText === 'yes' && !theadCreated) {
       const thead = document.createElement('thead');
