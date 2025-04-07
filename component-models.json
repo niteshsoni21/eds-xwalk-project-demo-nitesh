@@ -307,6 +307,27 @@
     ]
   },
   {
+    "id": "table",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "headers",
+        "value": "",
+        "label": "Table Headers",
+        "valueType": "string",
+        "multi": true
+      },
+      {
+        "component": "richtext",
+        "name": "rows",
+        "value": "",
+        "label": "Table Rows",
+        "valueType": "string",
+        "multi": true
+      }
+    ]
+  },
+  {
     "id": "tags",
     "fields": [
       {
