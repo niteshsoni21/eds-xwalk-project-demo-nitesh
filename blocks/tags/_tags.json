@@ -46,7 +46,7 @@
         },
         {
           "component": "text",
-          "name": "suggestedfeaturetag_tags",
+          "name": "suggestedfeature_tags",
           "value": "",
           "label": "Tags",
           "valueType": "string[]",
