@@ -359,38 +359,11 @@
         "valueType": "string"
       },
       {
-        "component": "container",
-        "label": "Tag Details",
-        "name": "suggestedfeature_tagdetails",
-        "valueType": "string",
-        "fields": [
-          {
-            "component": "suggested-features",
-            "multi": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "suggested-features",
-    "fields": [
-      {
         "component": "text",
-        "name": "linkText",
+        "name": "suggestedfeaturetag_tags",
         "value": "",
-        "label": "Tag",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "link",
-        "value": "",
-        "label": "Link",
-        "valueType": "string",
-        "validation": {
-          "rootPath": "/content/eds-xwalk-project-demo-nitesh"
-        }
+        "label": "Tags",
+        "valueType": "string[]"
       }
     ]
   },
