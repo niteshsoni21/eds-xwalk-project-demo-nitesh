@@ -1,5 +1,4 @@
-function updateTagsList(ele, ul) {
-  const tags = ele.innerHTML.split(',');
+function updateTagsList(tags, ul) {
   tags.forEach((tag) => {
     const li = document.createElement('li');
     li.innerHTML = tag;
@@ -19,14 +18,16 @@ export default function decorate(block) {
     ul.id = ulClasses[i];
     if (len < 2) {
       row.querySelectorAll('p').forEach((ele) => {
-        updateTagsList(ele, ul, ulClasses);
+        const tags = ele.innerHTML.split(',');
+        updateTagsList(tags, ul);
       });
     } else {
       const titleDiv = document.createElement('div');
       titleDiv.classList.add('tags-title');
       titleDiv.append(row.querySelectorAll('p')[0].outerHTML);
       tagsBlock.append(titleDiv);
-      updateTagsList(row.querySelectorAll('p')[1].outerHTML, ul);
+      const tags = row.querySelectorAll('p')[1].innerHTML.split(',');
+      updateTagsList(tags, ul);
     }
     tagsBlock.append(ul);
     row.innerHTML = tagsBlock.innerHTML;
