@@ -24,7 +24,9 @@ export default function decorate(block) {
     } else {
       const titleDiv = document.createElement('div');
       titleDiv.classList.add('tags-title');
-      titleDiv.append(row.querySelectorAll('p')[0].outerHTML);
+      const title = document.createElement('p');
+      title.innerHTML = row.querySelectorAll('p')[0].innerHTML;
+      titleDiv.append(title);
       tagsBlock.append(titleDiv);
       const tags = row.querySelectorAll('p')[1].innerHTML.split(',');
       updateTagsList(tags, ul);
