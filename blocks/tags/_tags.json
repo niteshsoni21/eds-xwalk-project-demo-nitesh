@@ -29,12 +29,27 @@
           "multi":  true
         },
         {
-          "component": "text",
-          "name": "suggestedfeatures",
-          "value": "",
+          "component": "container",
           "label": "Suggested Features",
-          "valueType": "string[]",
-          "multi": true
+          "name": "suggestedfeatures",
+          "valueType": "string",
+          "collapsible": true,
+          "fields": [
+            {
+              "component": "text",
+              "label": "Title",
+              "name": "title",
+              "valueType": "string"
+            },
+            {
+              "component": "text",
+              "name": "suggestedfeature-tags",
+              "value": "",
+              "label": "Tags",
+              "valueType": "string[]",
+              "multi": true
+            }
+          ]
         }
       ]
     }
