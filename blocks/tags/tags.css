@@ -2,16 +2,26 @@
     padding-top: 30px;
 }
 
+.tags-title p {
+    text-align: left;
+    font-family: "Roboto Medium", sans-serif;
+    font-size: 26px;
+    line-height: 48px;
+    letter-spacing: inherit;
+    color: #000;
+    opacity: 1;
+}
+
 .section.right-container.tagsblock-container .default-content-wrapper:nth-child(1) p:nth-child(1) {
-    font-family: "Roboto Medium";
+    font-family: "Roboto Medium", sans-serif;
     font-size: 26px;
     line-height: 32px;
-    color: #000000;
+    color: #000;
 }
 
 .section.right-container.tagsblock-container .default-content-wrapper:nth-child(1) p:nth-child(2) {
     padding-top: 16px;
-    font: normal normal normal 16px/32px "Roboto Regular";
+    font: normal normal normal 16px/32px "Roboto Regular", sans-serif;
     color: #1d1d1d;
 }
 
@@ -25,14 +35,14 @@
 
 .tags-list li {
     text-align: left;
-    font-family: "Roboto Medium";
+    font-family: "Roboto Medium", sans-serif;
     font-size: 14px;
     line-height: 19px;
     padding: 7px 17px;
-    letter-spacing: 0px;
+    letter-spacing: inherit;
     color: #454546;
     list-style-type: none;
-    border: 1px solid #000000;
+    border: 1px solid #000;
     border-radius: 17px;
     opacity: 1;
     display: inline-block;
@@ -48,10 +58,10 @@
     text-align: left;
     font-size: 18px;
     line-height: 24px;
-    letter-spacing: 0px;
+    letter-spacing: inherit;
     color: #292985;
     margin-bottom: 24px;
-    font-family: "Roboto Medium";
+    font-family: "Roboto Medium", sans-serif;
 }
 
 .suggestedfeatures-list li a {
@@ -61,25 +71,22 @@
     color: #292985;
 }
 
-.suggestedfeatures-list li a::after {
-    content: url(../../styles/icons/arrow-down-left.svg);
-    transform: rotate(-90deg);
-    margin-right: 24px;
-    float: right;
-    margin-left: 5px;
-}
+    .suggestedfeatures-list li a::after {
+        content: url('../../icons/arrow-down-left.svg');
+        transform: rotate(-90deg);
+        margin-right: 24px;
+        float: right;
+        margin-left: 5px;
+    }
 
 .section.right-container.tagsblock-container .button-container a {
     display: inline-block;
     padding: 14px 40px;
     background: #292985;
-}
-
-.section.right-container.tagsblock-container .button-container a {
     text-align: left;
-    font: normal normal bold 14px/19px "Roboto Bold";
+    font: normal normal bold 14px/19px "Roboto Bold", sans-serif;
     letter-spacing: 0.56px;
-    color: #ffffff;
+    color: #fff;
     text-transform: uppercase;
     opacity: 1;
 }
@@ -89,22 +96,12 @@
     margin-bottom: 33px;
 }
 
-.tags-title p {
-    text-align: left;
-    font-family: "Roboto Medium";
-    font-size: 26px;
-    line-height: 48px;
-    letter-spacing: 0px;
-    color: #000000;
-    opacity: 1;
-}
-
 .tags-list .bg-blue {
     background: #292985;
     color: #fff;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (width >= 1023px) {
     .section.right-container.tagsblock-container {
         padding-top: 40px;
         padding-bottom: 37px;
@@ -114,9 +111,13 @@
         text-align: center;
     }
 
+    .tags-title p {
+        font-size: 20px;
+    }
+
     .section.right-container.tagsblock-container .default-content-wrapper:nth-child(1) p:nth-child(1) {
         font-size: 20px;
-        list-style: 26px;
+        list-style: square;
     }
 
     .section.right-container.tagsblock-container .default-content-wrapper:nth-child(1) p:nth-child(2) {
@@ -132,10 +133,6 @@
     .tags-title {
         margin-top: 44px;
         margin-bottom: 35px;
-    }
-
-    .tags-title p {
-        font-size: 20px;
     }
 
     .tags-list {
