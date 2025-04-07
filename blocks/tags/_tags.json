@@ -46,6 +46,7 @@
         },
         {
           "component": "container",
+          "name": "suggestedfeatures",
           "valueType": "string",
           "collapsible": true,
           "multi": true,
