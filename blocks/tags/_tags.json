@@ -46,7 +46,8 @@
         },
         {
           "component": "container",
-          "name": "suggestedfeatures",
+          "label": "Tag Details",
+          "name": "tag-info",
           "valueType": "string",
           "collapsible": true,
           "multi": true,
