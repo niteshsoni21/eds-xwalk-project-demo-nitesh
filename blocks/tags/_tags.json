@@ -23,7 +23,7 @@
         {
           "component": "tab",
           "label": "Tags Tab",
-          "name": "tags-tab"
+          "name": "tab1"
         },
         {
           "component": "text",
@@ -41,7 +41,7 @@
         {
           "component": "text",
           "label": "Title",
-          "name": "title",
+          "name": "suggestedfeature_title",
           "valueType": "string"
         },
         {
