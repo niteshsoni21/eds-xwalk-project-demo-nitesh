@@ -33,7 +33,7 @@
   ],
   "models": [
     {
-      "id": "tableRows",
+      "id": "table",
       "fields": [
         {
           "component": "richtext",
@@ -49,7 +49,6 @@
     {
       "id": "table",
       "components": [
-        "tableRows",
         "title"
       ]
     }

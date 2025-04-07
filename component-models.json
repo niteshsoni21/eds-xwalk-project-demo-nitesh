@@ -307,7 +307,7 @@
     ]
   },
   {
-    "id": "tableRows",
+    "id": "table",
     "fields": [
       {
         "component": "richtext",
