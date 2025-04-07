@@ -21,18 +21,20 @@
       "id": "tags",
       "fields": [
         {
-          "component": "aem-tag",
+          "component": "text",
           "name": "tags",
           "value": "",
           "label": "Tags",
-          "valueType": "string[]"
+          "valueType": "string[]",
+          "multi":  true
         },
         {
-          "component": "aem-tag",
+          "component": "text",
           "name": "suggestedfeatures",
           "value": "",
           "label": "Suggested Features",
-          "valueType": "string[]"
+          "valueType": "string[]",
+          "multi": true
         }
       ]
     }
