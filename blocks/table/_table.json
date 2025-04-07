@@ -38,7 +38,7 @@
         {
           "component": "select",
           "name": "isHeader",
-          "value": "yes",
+          "value": "no",
           "label": "Is this table header row?",
           "valueType": "string",
           "options": [
@@ -54,7 +54,7 @@
         },
         {
           "component": "richtext",
-          "name": "tableRows",
+          "name": "rows",
           "value": "",
           "label": "Table Rows",
           "valueType": "string"
