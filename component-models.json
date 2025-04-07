@@ -363,6 +363,7 @@
         "label": "Tag Details",
         "name": "suggestedfeature_tagdetails",
         "valueType": "string",
+        "multi": true,
         "fields": [
           {
             "component": "text",
