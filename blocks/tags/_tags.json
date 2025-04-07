@@ -47,10 +47,9 @@
         {
           "component": "container",
           "label": "Tag Details",
-          "name": "suggestedfeatures",
+          "name": "tagdetails",
           "valueType": "string",
           "collapsible": true,
-          "multi": true,
           "fields": [
             {
               "component": "text",
