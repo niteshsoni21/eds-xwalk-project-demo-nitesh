@@ -315,15 +315,20 @@
         "value": "",
         "label": "Table Headers",
         "valueType": "string",
-        "multi": true
-      },
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "tableRows",
+    "fields": [
       {
         "component": "richtext",
         "name": "rows",
         "value": "",
         "label": "Table Rows",
         "valueType": "string",
-        "multi": true
+        "multi": false
       }
     ]
   },

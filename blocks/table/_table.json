@@ -14,6 +14,21 @@
           }
         }
       }
+    },
+    {
+      "title": "Table Rows",
+      "id": "tableRows",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Table Rows",
+              "model": "tableRows"
+            }
+          }
+        }
+      }
     }
   ],
   "models": [
@@ -26,18 +41,30 @@
           "value": "",
           "label": "Table Headers",
           "valueType": "string",
-          "multi": true
-        },
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "tableRows",
+      "fields": [
         {
           "component": "richtext",
           "name": "rows",
           "value": "",
           "label": "Table Rows",
           "valueType": "string",
-          "multi": true
+          "multi": false
         }
       ]
     }
   ],
-  "filters": []
+  "filters": [
+    {
+      "id": "table",
+      "components": [
+        "tableRows"
+      ]
+    }
+  ]
 }

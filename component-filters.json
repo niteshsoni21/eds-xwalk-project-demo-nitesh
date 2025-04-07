@@ -52,5 +52,11 @@
       "title",
       "video"
     ]
+  },
+  {
+    "id": "table",
+    "components": [
+      "tableRows"
+    ]
   }
 ]
