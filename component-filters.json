@@ -21,7 +21,6 @@
       "tags",
       "video",
       "table",
-      "tableCopy",
       "recommended-variants"
     ]
   },
@@ -52,12 +51,6 @@
       "button",
       "title",
       "video"
-    ]
-  },
-  {
-    "id": "tableCopy",
-    "components": [
-      "tableRowsCopy"
     ]
   },
   {
