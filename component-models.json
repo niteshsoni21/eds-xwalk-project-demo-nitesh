@@ -368,7 +368,7 @@
         "fields": [
           {
             "component": "text",
-            "name": "suggestedfeature_linkText",
+            "name": "suggestedfeature_tag",
             "value": "",
             "label": "Tag",
             "valueType": "string"
