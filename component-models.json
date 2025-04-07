@@ -363,7 +363,7 @@
         "label": "Tag Details",
         "name": "tagdetail",
         "valueType": "string",
-        "collapsible": true,
+        "collapsible": false,
         "multi": true,
         "fields": [
           {
