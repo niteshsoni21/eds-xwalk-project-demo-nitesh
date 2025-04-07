@@ -56,7 +56,8 @@
   {
     "id": "table",
     "components": [
-      "tableRows"
+      "tableRows",
+      "title"
     ]
   }
 ]
