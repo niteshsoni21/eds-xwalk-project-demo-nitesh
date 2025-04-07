@@ -14,7 +14,7 @@ export default function decorate(block) {
     const tagsBlock = document.createElement('div');
     row.classList.add(tagClasses[i]);
     const ul = document.createElement('ul');
-    let length = row.querySelectorAll('p').length;
+    const length = row.querySelectorAll('p').length;
     ul.classList.add(ulClasses[i]);
     ul.id = ulClasses[i];
     if (length < 2) {
