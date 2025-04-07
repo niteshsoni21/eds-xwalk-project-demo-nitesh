@@ -363,7 +363,8 @@
         "name": "suggestedfeaturetag_tags",
         "value": "",
         "label": "Tags",
-        "valueType": "string[]"
+        "valueType": "string[]",
+        "multi": true
       }
     ]
   },
