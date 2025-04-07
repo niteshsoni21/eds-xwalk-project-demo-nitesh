@@ -67,6 +67,8 @@
         "author",
         "tags",
         "video",
+        "table",
+        "recommended-variants",
         "accordion"
       ]
     }

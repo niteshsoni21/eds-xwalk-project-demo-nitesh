@@ -1,0 +1,296 @@
+.recommended-variants {
+    margin: 15px 2px;
+    position: relative;
+    display: block;
+}
+
+.recommended-variants-wrapper {
+    margin-top: 34px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.recommended-variants-wrapper .card-top {
+    position: relative;
+}
+
+.recommended-variants-wrapper .variant-share-text {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    font-size: 14px;
+}
+
+.recommended-variants-wrapper .variant-share-text::before {
+    background-image: url('../../icons/share-icon.svg');
+    background-size: 100%;
+    content: "";
+    height: 12px;
+    width: 14px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
+.recommended-variants-wrapper .top-selling-container {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #000 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.recommended-variants-wrapper .top-selling-text {
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+.recommended-variants-wrapper .variant-desc {
+    margin-top: 35px;
+    padding: 5px 12px;
+}
+
+.variant-price-section {
+    padding-top: 15px;
+    padding-bottom: 23px;
+}
+
+.variant-price {
+    display: inline-block;
+}
+
+.variant-price-text {
+    color: #8B8B8C;
+    padding-left: 8px;
+    display: inline-block;
+    height: 34px;
+    vertical-align: middle;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.variant-feature {
+    color: #304659;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.variant-feature ul {
+    min-height: 170px;
+}
+
+.variant-feature ul li {
+    padding-bottom: 10px;
+}
+
+.variant-feature ul li::before {
+    background-image: url('../../icons/check-icons.svg');
+    background-size: 100%;
+    content: "";
+    height: 11px;
+    width: 17px;
+    display: inline-block;
+    margin-right: 11px;
+}
+
+.variant-feature ul li p {
+    color: #3B5266;
+    display: inline-block;
+}
+
+.variant-button-container button {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    background: none;
+}
+
+.variant-button-container .specification-btn {
+    letter-spacing: 0.56px;
+    padding: 17px 0;
+    text-transform: uppercase;
+}
+
+.variant-button-container .test-drive-btn {
+    text-decoration: underline;
+    color: #202020;
+}
+
+.variant-button-container {
+    padding-bottom: 31px;
+}
+
+.variant-button-container .compare-cta {
+    text-align: center;
+}
+
+.variant-button-container .compare-cta input[type='checkbox'] {
+    accent-color: #292985;
+    cursor: pointer;
+}
+
+.recommended-variants-wrapper .compare-cta label {
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 32px;
+    color: #202020;
+}
+
+.recommended-variants-wrapper .test-drive-btn a {
+    text-decoration: underline;
+    color: #202020;
+}
+
+.top-selling-container.false {
+    display: none;
+}
+
+.recommended-variants-wrapper .specification-btn a {
+    color: #292985;
+    padding: 14px 15px;
+    border: 1px solid #292985;
+}
+
+.recommended-variants-wrapper .variant-card a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.swiper {
+    width: 100%;
+    padding: 20px;
+}
+
+.recommended-variants-wrapper .swiper-slide {
+    border: 1px solid #707070;
+    display: inline-block;
+    text-align: left;
+    width: 32%;
+    justify-content: center;
+}
+
+.variant-card {
+    background: #fff;
+    width: 300px;
+    margin-left: 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+.variant-img {
+    width: 100%;
+}
+
+.variant-title {
+    font-weight: bold;
+}
+
+.variant-desc ul {
+    text-align: left;
+    font-size: 14px;
+    padding-left: 22px;
+}
+
+.recommended-variants-header {
+    display: block;
+    font-size: var(--heading-font-size-xl);
+    width: 100%;
+    margin-top: 0.8em;
+    margin-bottom: 0.5em;
+    font-family: var(--heading-font-family);
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.swiper-button-prev.variants-prev {
+    background: url('../../icons/arrow-left-mobile.svg') no-repeat 0 0;
+    left: auto;
+    right: 165px;
+    width: 20px;
+    height: 22px;
+    position: absolute;
+    top: 56px;
+}
+
+.swiper-button-next.variants-next {
+    transform: rotate(180deg);
+    background: url('../../icons/arrow-left-mobile.svg') no-repeat 0 0;
+    left: auto;
+    right: 110px;
+    width: 20px;
+    height: 22px;
+    position: absolute;
+    top: 53px;
+}
+
+.variant-card.swiper-slide.hidden-slide {
+    display: none;
+}
+
+@media (width < 768px) {
+    .recommended-variants-wrapper .swiper-slide {
+        width: 90%;
+    }
+
+    .recommended-variants-header {
+        font-size: 30px;
+        width: 70%;
+    }
+
+    .swiper-button-next.variants-next {
+        right: 83px;
+        top: 38px;
+    }
+
+    .swiper-button-prev.variants-prev {
+        right: 150px;
+        top: 40px;
+    }
+
+    .variant-title {
+        font-size: 15px;
+    }
+
+    .variant-price {
+        font-size: 24px;
+    }
+}
+
+@media (width >= 768px) {
+    .recommended-variants-wrapper .swiper-slide {
+        width: 32%;
+    }
+
+    .swiper-button-prev.variants-prev {
+        right: 200px;
+    }
+
+    .swiper-button-next.variants-next {
+        right: 145px;
+    }
+
+    .variant-title {
+        font-size: 15px;
+    }
+
+    .variant-price {
+        font-size: 14px;
+    }
+}
+
+@media (width >= 1024px) {
+    .recommended-variants-wrapper .swiper-slide {
+        width: 32%;
+    }
+
+    .variant-title {
+        font-size: 21px;
+    }
+
+    .variant-price {
+        font-size: 21px;
+    }
+}

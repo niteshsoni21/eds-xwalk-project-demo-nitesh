@@ -17,4 +17,18 @@ export default async function decorate(block) {
   while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
 
   block.append(footer);
+
+  const lastChildDiv = document.querySelector('.columns-5-cols > div > div:last-child');
+
+  if (lastChildDiv) {
+    lastChildDiv.classList.add('contactus');
+    const pictures = lastChildDiv.querySelectorAll('picture');
+
+    pictures.forEach((picture) => {
+      picture.classList.add('social');
+    });
+  }
+
+  const lastSection = document.querySelector('.footer > div > div:last-child');
+  lastSection.classList.add('copyright-bar');
 }

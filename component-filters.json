@@ -20,6 +20,8 @@
       "author",
       "tags",
       "video",
+      "table",
+      "recommended-variants",
       "accordion"
     ]
   },
@@ -55,6 +57,12 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "table",
+    "components": [
+      "tableRows"
     ]
   }
 ]
