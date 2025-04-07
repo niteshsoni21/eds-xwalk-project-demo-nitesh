@@ -47,7 +47,7 @@
         {
           "component": "container",
           "label": "Tag Details",
-          "name": "tag-info",
+          "name": "taginfo",
           "valueType": "string",
           "collapsible": true,
           "multi": true,
