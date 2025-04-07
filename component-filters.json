@@ -49,14 +49,13 @@
       "text",
       "image",
       "button",
-      "title",
-      "video"
+      "title"
     ]
   },
   {
     "id": "table",
     "components": [
-      "title"
+      "tableRows"
     ]
   }
 ]
