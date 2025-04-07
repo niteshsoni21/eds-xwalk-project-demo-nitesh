@@ -307,6 +307,35 @@
     ]
   },
   {
+    "id": "tableRowsCopy",
+    "fields": [
+      {
+        "component": "select",
+        "name": "isHeader",
+        "value": "no",
+        "label": "Is this table header row?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "yes"
+          },
+          {
+            "name": "No",
+            "value": "no"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "rows",
+        "value": "",
+        "label": "Table Rows",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "tableRows",
     "fields": [
       {

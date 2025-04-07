@@ -54,6 +54,12 @@
     ]
   },
   {
+    "id": "tableCopy",
+    "components": [
+      "tableRowsCopy"
+    ]
+  },
+  {
     "id": "table",
     "components": [
       "tableRows"
