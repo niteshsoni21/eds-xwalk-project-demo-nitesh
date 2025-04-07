@@ -335,6 +335,11 @@
     "id": "tags",
     "fields": [
       {
+        "component": "tab",
+        "label": "Tags Tab",
+        "name": "tags-tab"
+      },
+      {
         "component": "text",
         "name": "tags",
         "value": "",
@@ -343,25 +348,40 @@
         "multi": true
       },
       {
+        "component": "tab",
+        "label": "Suggested Features Tab",
+        "name": "tab2"
+      },
+      {
+        "component": "text",
+        "label": "Title",
+        "name": "title",
+        "valueType": "string"
+      },
+      {
         "component": "container",
         "label": "Suggested Features",
         "name": "suggestedfeatures",
         "valueType": "string",
         "collapsible": true,
+        "multi": true,
         "fields": [
           {
             "component": "text",
-            "label": "Title",
-            "name": "title",
+            "name": "suggestedfeature_tag",
+            "value": "",
+            "label": "Tag",
             "valueType": "string"
           },
           {
-            "component": "text",
-            "name": "suggestedfeature-tags",
+            "component": "aem-content",
+            "name": "suggestedfeature_link",
             "value": "",
-            "label": "Tags",
-            "valueType": "string[]",
-            "multi": true
+            "label": "Link",
+            "valueType": "string",
+            "validation": {
+              "rootPath": "/content/eds-xwalk-project-demo-nitesh"
+            }
           }
         ]
       }
