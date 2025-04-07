@@ -16,6 +16,21 @@
       }
     },
     {
+      "title": "Table Headers",
+      "id": "tableHeaders",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Table Rows",
+              "model": "tableHeaders"
+            }
+          }
+        }
+      }
+    },
+    {
       "title": "Table Rows",
       "id": "tableRows",
       "plugins": {
@@ -33,7 +48,7 @@
   ],
   "models": [
     {
-      "id": "table",
+      "id": "tableHeaders",
       "fields": [
         {
           "component": "richtext",
@@ -63,6 +78,7 @@
     {
       "id": "table",
       "components": [
+        "tableHeaders",
         "tableRows"
       ]
     }

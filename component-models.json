@@ -307,7 +307,7 @@
     ]
   },
   {
-    "id": "table",
+    "id": "tableHeaders",
     "fields": [
       {
         "component": "richtext",
