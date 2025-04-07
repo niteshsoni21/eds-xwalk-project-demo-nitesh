@@ -362,8 +362,8 @@
         "component": "container",
         "label": "Tag Details",
         "name": "tagdetail",
-        "valueType": "string",
-        "collapsible": false,
+        "valueType": "string[]",
+        "collapsible": true,
         "multi": true,
         "fields": [
           {
