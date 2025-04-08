@@ -48,17 +48,20 @@
       "id": "suggestedfeatures-item",
       "fields": [
         {
-          "component": "text",
+          "component": "aem-tag",
           "label": "Feature Title",
           "name": "featurelinkText",
           "valueType": "string"
         },
         {
-          "component": "text",
+          "component": "aem-content",
           "name": "featurelink",
           "value": "",
           "label": "Feature Link",
-          "valueType": "string"
+          "valueType": "string",
+          "validation": {
+            "rootPath": "/content/eds-xwalk-project-demo-nitesh"
+          }
         }
       ]
     }
