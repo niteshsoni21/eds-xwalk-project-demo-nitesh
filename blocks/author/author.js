@@ -1,42 +1,44 @@
-import { moveInstrumentation } from '../../scripts/scripts.js';
+import { moveAttributes, moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
-  const authorSocial = document.createElement('div');
+  const classes = ['title', 'subtitle', 'authorname', 'date', 'tags', 'social-facebook', 'social-linkedin', 'social-youtube', 'social-instagram'];
+
   const blockAuthor = document.createElement('div');
+  const authorSocial = document.createElement('div');
   const ul = document.createElement('ul');
-  let socialDiv = false;
-  const classSuffix = 'author-';
+
+  block.querySelectorAll('p').forEach((ele, i) => {
+    ele.classList.add(`author-${classes[i]}`);
+  });
+
   [...block.children].forEach((row) => {
-    row.querySelectorAll('[data-aue-prop]').forEach((ele) => {
-      const propClass = classSuffix.concat(ele.getAttribute('data-aue-prop').split('_')[1]);
-      if (ele.getAttribute('data-aue-prop').startsWith('social')) {
-        socialDiv = true;
+    row.querySelectorAll('p').forEach((ele) => {
+      if (ele.className.includes('social-')) {
+        ele.className = ele.className.replace('social-', '');
         const li = document.createElement('li');
         const href = document.createElement('a');
         const img = document.createElement('picture');
         href.setAttribute('href', ele.innerHTML);
-        img.classList.add(propClass);
+        href.setAttribute('title', ele.className.replace('author-', ''));
+        moveInstrumentation(ele, li);
+        moveAttributes(ele, img);
         href.append(img);
         li.append(href);
-        moveInstrumentation(ele, li);
         ul.append(li);
-        ul.classList.add('social-list');
       } else {
         const propertydiv = document.createElement('div');
-        if (ele.getAttribute('data-aue-prop') !== 'authorContent_title') {
-          propertydiv.innerHTML = `<p> ${ele.innerHTML} </p>`;
-        } else {
-          propertydiv.innerHTML = ele.innerHTML;
-        }
-        propertydiv.classList.add(propClass);
+        const paragraphcontent = document.createElement('p');
+        moveInstrumentation(ele, propertydiv);
+        moveAttributes(ele, propertydiv);
+        paragraphcontent.innerHTML = ele.innerHTML;
+        propertydiv.appendChild(paragraphcontent);
         blockAuthor.appendChild(propertydiv);
       }
-      if (socialDiv) {
-        authorSocial.append(ul);
-        authorSocial.classList.add('author-social');
-        blockAuthor.appendChild(authorSocial);
-      }
     });
+    ul.classList.add('social-list');
+    authorSocial.append(ul);
+    authorSocial.classList.add('author-social');
+    blockAuthor.appendChild(authorSocial);
   });
   block.innerHTML = blockAuthor.innerHTML;
 }

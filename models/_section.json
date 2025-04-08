@@ -41,6 +41,10 @@
             {
               "name": "Right Container",
               "value": "right-container"
+            },
+            {
+              "name": "Tags Block Container",
+              "value": "tagsblock-container"
             }
           ]
         }
@@ -64,7 +68,8 @@
         "tags",
         "video",
         "table",
-        "recommended-variants"
+        "recommended-variants",
+        "accordion"
       ]
     }
   ]

@@ -120,8 +120,52 @@
           {
             "name": "Right Container",
             "value": "right-container"
+          },
+          {
+            "name": "Tags Block Container",
+            "value": "tagsblock-container"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "accordion",
+    "fields": [
+      {
+        "component": "radio-group",
+        "label": "Expand first item by default",
+        "name": "classes",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "first-open"
+          },
+          {
+            "name": "No",
+            "value": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "accordion-item",
+    "fields": [
+      {
+        "component": "text",
+        "name": "accordionItem_label",
+        "value": "",
+        "label": "Label",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "accordionItem_content",
+        "value": "",
+        "label": "Content",
+        "valueType": "string"
       }
     ]
   },
@@ -132,12 +176,13 @@
         "component": "richtext",
         "name": "authorContent_title",
         "label": "Title",
-        "valueType": "string"
+        "valueType": "string",
+        "required": true
       },
       {
         "component": "text",
         "name": "authorContent_subtitle",
-        "label": "Sub Title",
+        "label": "Subtitle",
         "valueType": "string"
       },
       {
@@ -152,14 +197,14 @@
         "label": "Date",
         "name": "authorContent_date",
         "valueType": "date",
-        "placeholder": "MMM DD, YYYY",
-        "displayFormat": "MMM DD, YYYY",
-        "valueFormat": "MMM DD, YYYY"
+        "value": "",
+        "placeholder": "dd/mm/yyyy",
+        "displayFormat": "dd/mm/yyyy",
+        "valueFormat": "dd/mm/yyyy"
       },
       {
-        "component": "aem-tag",
-        "name": "author_tags",
-        "value": "",
+        "component": "text",
+        "name": "tags",
         "label": "Tags",
         "valueType": "string"
       },
@@ -178,7 +223,7 @@
       {
         "component": "text",
         "name": "social_youtube",
-        "label": "Youtube Link",
+        "label": "YouTube Link",
         "valueType": "string"
       },
       {
@@ -339,11 +384,36 @@
     "id": "tags",
     "fields": [
       {
-        "component": "aem-tag",
-        "name": "cq:tags",
+        "component": "tab",
+        "label": "Tags Tab",
+        "name": "tab1"
+      },
+      {
+        "component": "text",
+        "name": "tags",
         "value": "",
         "label": "Tags",
+        "valueType": "string[]",
+        "multi": true
+      },
+      {
+        "component": "tab",
+        "label": "Suggested Features Tab",
+        "name": "tab2"
+      },
+      {
+        "component": "text",
+        "label": "Title",
+        "name": "suggestedfeature_title",
         "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "suggestedfeature_tags",
+        "value": "",
+        "label": "Tags",
+        "valueType": "string[]",
+        "multi": true
       }
     ]
   },

@@ -21,7 +21,14 @@
       "tags",
       "video",
       "table",
-      "recommended-variants"
+      "recommended-variants",
+      "accordion"
+    ]
+  },
+  {
+    "id": "accordion",
+    "components": [
+      "accordion-item"
     ]
   },
   {
