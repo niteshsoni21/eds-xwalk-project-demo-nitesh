@@ -60,6 +60,12 @@
     ]
   },
   {
+    "id": "suggestedfeatures",
+    "components": [
+      "suggestedfeatures-item"
+    ]
+  },
+  {
     "id": "table",
     "components": [
       "tableRows"

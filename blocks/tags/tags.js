@@ -1,36 +1,18 @@
-function updateTagsList(tags, ul) {
-  tags.forEach((tag) => {
-    const li = document.createElement('li');
-    li.innerHTML = tag;
-    ul.append(li);
-  });
-}
-
 export default function decorate(block) {
-  const tagClasses = ['tagsblock-tags', 'tagsblock-suggestedfeatures'];
-  const ulClasses = ['tags-list', 'suggestedfeatures-list'];
-  [...block.children].forEach((row, i) => {
+  [...block.children].forEach((row) => {
     const tagsBlock = document.createElement('div');
-    row.classList.add(tagClasses[i]);
+    row.classList.add('tagsblock-tags');
     const ul = document.createElement('ul');
-    const len = row.querySelectorAll('p').length;
-    ul.classList.add(ulClasses[i]);
-    ul.id = ulClasses[i];
-    if (len < 2) {
-      row.querySelectorAll('p').forEach((ele) => {
-        const tags = ele.innerHTML.split(',');
-        updateTagsList(tags, ul);
+    ul.classList.add('tags-list');
+    ul.id = 'tags-list';
+    row.querySelectorAll('p').forEach((ele) => {
+      const tags = ele.innerHTML.split(',');
+      tags.forEach((tag) => {
+        const li = document.createElement('li');
+        li.innerHTML = tag;
+        ul.append(li);
       });
-    } else {
-      const titleDiv = document.createElement('div');
-      titleDiv.classList.add('tags-title');
-      const title = document.createElement('p');
-      title.innerHTML = row.querySelectorAll('p')[0].innerHTML;
-      titleDiv.append(title);
-      tagsBlock.append(titleDiv);
-      const tags = row.querySelectorAll('p')[1].innerHTML.split(',');
-      updateTagsList(tags, ul);
-    }
+    });
     tagsBlock.append(ul);
     row.innerHTML = tagsBlock.innerHTML;
   });

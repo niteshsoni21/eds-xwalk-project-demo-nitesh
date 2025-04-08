@@ -21,32 +21,8 @@
       "id": "tags",
       "fields": [
         {
-          "component": "tab",
-          "label": "Tags Tab",
-          "name": "tab1"
-        },
-        {
           "component": "text",
           "name": "tags",
-          "value": "",
-          "label": "Tags",
-          "valueType": "string[]",
-          "multi": true
-        },
-        {
-          "component": "tab",
-          "label": "Suggested Features Tab",
-          "name": "tab2"
-        },
-        {
-          "component": "text",
-          "label": "Title",
-          "name": "suggestedfeature_title",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "suggestedfeature_tags",
           "value": "",
           "label": "Tags",
           "valueType": "string[]",
