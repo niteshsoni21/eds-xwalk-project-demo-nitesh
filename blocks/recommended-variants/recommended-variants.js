@@ -25,7 +25,7 @@ export default async function decorate(block) {
 
     variantDiv.innerHTML = `
       <div class="card-top">
-        <img src='${imagePath}' alt='${variant.variantTitle}' class='variant-img' />
+        <img src='${publishDomain}${imagePath}' alt='${variant.variantTitle}' class='variant-img' />
         <div class='variant-share-section'>
           <p class='variant-share-text'>Share</p>
           <div class='top-selling-container ${variant.topSelling}'>
